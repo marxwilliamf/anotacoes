@@ -1,0 +1,178 @@
+## Arquivos Android ############################################################
+
+sudo apt-get install jmtpfs mtp-tools
+
+jmtpfs contem mtpfs
+
+## VER RELEASE #################################################################
+
+lsb_release -rs
+
+##BANCO ########################################################################
+
+Dependências warsaw
+
+sudo apt-get install libnss3-tools libcurl3
+
+
+
+## SELECIONAR VERSÃO JAVA ######################################################
+
+sudo update-alternatives --config java
+
+
+##Comandos .deb ################################################################
+
+apt-cache stats
+
+sudo vi /etc/apt/sources.list
+
+sudo apt-get update
+
+sudo apt-get install
+
+sudo apt-cache search java jdk  // nome e descrição pacotes encontrados
+
+apt-cache show openjdk-7-jdk  // informações sobre o pacote
+
+sudo apt-get upgrade //verifica atualizações de todos os pacotes do sistema e instala
+
+sudo apt-get dist-upgrade   //atualiza todo o sistema para uma nova distribuição, mesmo que para isso tenha que eliminar pacotes, não é a melhor forma de atualizar o sistema
+
+sudo apt-get autoclean
+
+sudo apt-get –purge remove < pacote >
+
+sudo apt-get -f install   //Verifica as dependências e tenta corrigir os problemas, no caso de uma instalação corrompida.
+
+apt-config -v // versão apt
+
+apt-key list   // lista chaves gpg dos repositorios APT
+
+
+apt-cache depends virtualbox
+
+
+sudo echo "deb http://dl.google.com/linux/deb/ stable non-free" >> /etc/apt/sources.list
+sudo wget https://dl-ssl.google.com/linux/linux_signing_key.pub -O /tmp/key.pub
+sudo apt-key add /tmp/key.pub
+
+
+
+apt-get clean
+
+find /var/cache/apt/ -name \*.deb
+
+du -h
+
+sudo apt-get -d install minicom
+sudo dpkg -i /var/cache/apt/archives/minicom_2.3-1ubuntu1_i386.deb
+
+sudo dpkg -r minicom     //remover
+sudo dpkg -P minicom     //remove configurações junto
+sudo dpkg -x minicom     //extrai arquivos do pacote
+sudo dpkg -p minicom     //ver versão do pacote
+sudo dpkg -s minicom     //status
+
+dpkg-l | less            // lista todos os pacotes instalados
+dpkg -L virtualbox //mostra todos os arquivos do pacote no sistema
+
+dpkg -c /var/cache/apt/archives/virtualbox-dkms_4.3.36-dfsg-1+deb8u1_all.deb   //lista todos os arquivos do pacote
+
+
+##PERMISSÂO MONTAR PARTIÇÂO USUARIO ############################################
+
+
+Não sei se funciona
+
+é só adicionar no fim do arquivo sudoers..
+
+usuario ALL=NOPASSWD:/bin/mount e pronto!!!
+
+
+
+## LISTAR USUARIOS #############################################################
+
+getent passwd
+
+getent passwd | cut -d \: -f1
+
+cut -d : -f 1,5 /etc/passwd | tr : \\\t
+
+## LISTAR UID DO USUARIO #######################################################
+
+id "user"
+
+id root
+
+##Adiciona usuario ao sudoers #################################################
+
+/etc/sudoers
+
+# User privilege specification
+root ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL:ALL) ALL 
+
+addgroup "nomedeusuario" sudo
+
+REINICIAR O PC
+
+
+sudo apt-get update
+
+
+##INSTALAÇÂO DRIVERS############################################################
+
+sudo apt-get install firmware-realtek firmware-brcm80211 
+
+cat /etc/apt/sources.list
+	main contrib non-free
+
+
+##Adicionando CHAVE PÚBLICA ####################################################
+
+tem que ser root
+
+gpg –keyserver pgpkeys.mit.edu –recv-key 010908312D230C5F && gpg -a –export 010908312D230C5F | sudo apt-key add –
+
+
+################################################################################
+
+
+Não foi possível obter acesso exclusivo ao directório de administração (/var/lib/dpkg/), outro processo está a utilizá-lo?
+
+ps aux | grep apt
+
+kill PID do Processo
+
+
+sudo rm /var/lib/apt/lists/lock
+
+e em seguido o comando
+
+sudo rm /var/lib/dpkg/lock
+
+
+################################################################################
+
+apt-get install texlive
+
+apt-get install texlive-full
+
+
+######################
+
+
+sudo apt-get install texlive texlive-latex-extra texlive-lang-portuguese
+sudo apt-get install texlive-math-extra
+
+
+
+
+
+
+
+
+

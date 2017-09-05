@@ -1,0 +1,81 @@
+
+git config --help
+
+git config --global core.editor gedit
+
+
+$ git config --global user.name "William Marx"
+$ git config --global user.email "marxwilliamf@gmail.com"
+
+
+ssh-keygen -t rsa -C seuemail@seuprovedor.com
+
+ssh -T git@github.com 
+
+
+$ mkdir key_backup
+
+$ cp id_rsa* key_backup
+
+$ rm id_rsa*
+
+
+
+git clone --bare PrimeirasJanelas /home/user/gitclone/PrimeirasJanelas.git
+
+
+git add <arquivos...> 
+
+git commit -m "comentário qualquer"
+
+ git push -u origin master
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+
+
+
+
+git config --global push.default current
+
+
+
+
+
+
+
+
+
+
+Quick setup — if you’ve done this kind of thing before
+or
+
+We recommend every repository include a README, LICENSE, and .gitignore.
+…or create a new repository on the command line
+
+echo "# Swing_DevMedia" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:MarxWilliam/Swing_DevMedia.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:MarxWilliam/Swing_DevMedia.git
+git push -u origin master
+
+…or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+
+
+
+
+
+
+
+
+
+
