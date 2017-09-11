@@ -124,6 +124,135 @@ Bean
 
 
 
+Arquivos
+	
+	BufferedReader br = new BufferedReader(new FileReader(nome));
+	while(br.ready()){
+		String linha = br.readLine();
+		System.out.println(linha);
+	}
+	br.close();
+
+
+
+#####################################################
+
+	private static void readFile(String fileName) {
+       try {
+         File file = new File(fileName);
+         FileReader reader = new FileReader(file);
+         BufferedReader in = new BufferedReader(reader);
+         String string;
+         while ((string = in.readLine()) != null) {
+           System.out.println(string);
+         }
+         in.close();
+       } catch (IOException e) {
+         e.printStackTrace();
+       }
+   }
+
+
+####################################################
+
+private static void readFile(String fileName) {
+       try {
+         File file = new File(fileName);
+         Scanner scanner = new Scanner(file);
+         while (scanner.hasNext()) {
+           System.out.println(scanner.next());
+         }
+         scanner.close();
+       } catch (FileNotFoundException e) {
+         e.printStackTrace();
+       }
+
+###################################################
+
+
+private static void readFile(String fileName) {
+     try {
+       Scanner scanner = new Scanner(new File(fileName));
+       scanner.useDelimiter
+         (System.getProperty("line.separator")); 
+       while (scanner.hasNext()) {
+         System.out.println(scanner.next());
+       scanner.close();
+     } catch (FileNotFoundException e) {
+       e.printStackTrace();
+     }
+   } 
+
+
+##################################################
+
+	public class WebPageScanner {
+     public static void main(String[] args) {
+       try {
+         URLConnection connection =
+           new URL("http://java.net").openConnection();
+         String text = new Scanner(
+           connection.getInputStream()).
+           useDelimiter("\\Z").next();
+       } catch (IOException e) {
+         e.printStackTrace();
+       }
+     }
+   }
+
+
+################################################
+
+private static void readFile(String fileName) {
+       try {
+         Scanner scanner =
+           new Scanner(new File(fileName));
+         scanner.useDelimiter
+           (System.getProperty("line.separator")); 
+         while (scanner.hasNext()) {
+           parseLine(scanner.next());
+         }
+         scanner.close();
+       } catch (FileNotFoundException e) {
+         e.printStackTrace();
+       }
+     }
+
+     private static void parseLine(String line) {
+       Scanner lineScanner = new Scanner(line);
+      lineScanner.useDelimiter("\\s*,\\s*");
+       String name = lineScanner.next();
+       int age = lineScanner.nextInt();
+       boolean isCertified = lineScanner.nextBoolean();
+       System.out.println("É " + isCertified +
+         " que " + name + ", tem "
+         + age + " anos.");
+     }
+
+     public static void main(String[] args) {
+       if (args.length != 1) {
+         System.err.println("uso: java TextScanner2"
+           + "arquivo local");
+         System.exit(0);
+       }
+       readFile(args[0]);
+     }
+   }
+
+################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
 Desing Paterns
 	GOF 23
 	DAO
