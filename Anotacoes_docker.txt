@@ -1,0 +1,62 @@
+docker images
+docker container ls -a
+
+docker container run -it -p 80:80 nginx
+
+docker container rm "container"
+docker image rm "image"
+
+docker container run -d -p 8080:80 --name servernginx nginx
+8080:80 = "externo":"interno"
+
+docker ps
+
+sudo docker container run -d -p 8080:80 --name apacheserver httpd
+
+sudo docker pull mysql   //baixa a imagem
+
+sudo docker start "container id"
+sudo docker stop "container id"
+
+sudo docker start apacheserver //name
+
+sudo docker container run -d -p 3306:3306 --name mysql --env MYSQL_ROOT_PASSWORD=123456 mysql
+
+sudo docker exec -it apacheserver bash
+
+
+docker info
+
+docker container --help
+
+
+docker network ls
+docker volume ls
+
+
+docker container rm $(docker container ls -a -q)   //remove todos os containers
+
+sudo docker container logs "nome container"
+
+docker container logs -f "nome container" //-f é opcional mantem escutando
+
+
+
+sudo docker run -d -v ~/apache:/usr/local/apache2/htdocs ccb
+
+
+sudo docker container top 9ff   //processos
+
+sudo docker container stats
+sudo docker container stats apacheserver
+
+sudo docker container inspect apacheserver
+
+sudo docker container inspect -f {{.Platform}} apacheserver
+
+
+sudo docker network ls|inspect|create|rm
+
+
+docker container run --name webhost -d --network my_custom_net
+
