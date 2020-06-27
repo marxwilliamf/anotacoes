@@ -1,24 +1,93 @@
+##########################
+
+We recommend every repository include a README, LICENSE, and .gitignore.
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/MarxWilliam/xxxxxxxxxxxx.git
+git push -u origin master
+                
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/MarxWilliam/xxxxxxxxxx.git
+git push -u origin master
+
+//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
+
+git config --global user.name = "William Felipe Marx"
+git config --global user.email = "marxwilliamf@gmail.com"
+
+touch texto.txt
+git init
+git status
+git add * | git add .
+git commit -a -m "Especificação do Commit"
+git branch ramo2git
+git log | git log --oneline | git log --graph | git log --graph --oneline
+git graph --oneline
+
+git checkout -b teste // cria um novo branch
+git checkout master // retorna ao ramo master
+
+ git log --graph --oneline --all  // todos os ramos
+
+ git log --since="2 weeks ago"
+
+ git log --no-merges
+ git log pasta/							   				//retorna todos os commits dessa pasta
+ git log pasta/arquivo.txt                 				//retorna todos os commits desse arquivo
+
+ git log -p pasta/ 						   				//mostra o pathches "pasta" com todos os commits e suas alterações detalhadas
+
+ git log --stat  						   				// mostra quais arquivos foram alteradoe em cada commit       
+ git log --pretty=oneline --graph		   				// mostra doda a hash
+ git log --pretty=short					   				//mostra apenas o autor e a menssagem do commit sem a datas pode adicionar --graph
+ git log --pretty=format:'%h : %s' --graph 				// mostra o grafo com o hash e a menssagem
+ git log --pretty=format:'%h : %s' --topo-order --grap  //commits aparecerem em order topológica (ex.: commits descendentes são mostrados antes de seus pais).
+ git log --pretty=format:'%h : %s' --date-order --grap  //ordena por timestamp pore´m nenhum pai vem antes dos filhos, as linhas de desenvolvimento não são agrupadas juntas
+
+ git reset --hard HEAD									//ainda não fez commit da alteração quer retornar para o ultimo commit
+
+ git reset 8bb0fdb										//voltando o projeto para o commit 8bb0fdb perde tudo que foi feito após esse commit
+ git revert HEAD										//voltando para o commit anterior pode trocar o HEAD pela hash de qualquer commit
+ 
+ no ramos master -> git merge teste
+ pode dar conflite mas abriu o processo para parar tem que dar uum git merge --abort
+ pra continuar resolver o conflito e fazer um commit
+
+
+git diff --cached //mostra modificações não adicionadas ao index	
+
+
+ git remote //mostra repositórios remotos
+
+
+ um repositório existente localmente
+ git remote add origin http://......./git.git
+ git push -u origin master
+
+ git push //manda pro repositório remoto
+
+//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 
 git config --help
 
 git config --global core.editor gedit
-
-
-$ git config --global user.name "William Marx"
-$ git config --global user.email "marxwilliamf@gmail.com"
+git config --global user.name "William Marx"
+git config --global user.email "marxwilliamf@gmail.com"
 
 
 ssh-keygen -t rsa -C seuemail@seuprovedor.com
 
 ssh -T git@github.com 
 
+mkdir key_backup
 
-$ mkdir key_backup
+cp id_rsa* key_backup
 
-$ cp id_rsa* key_backup
-
-$ rm id_rsa*
-
+m id_rsa*
 
 
 git clone --bare PrimeirasJanelas /home/user/gitclone/PrimeirasJanelas.git
@@ -32,41 +101,7 @@ git commit -m "comentário qualquer"
 The authenticity of host 'github.com (192.30.253.112)' can't be established.
 RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
 
-
-
-
 git config --global push.default current
-
-
-
-
-
-
-
-
-
-
-Quick setup — if you’ve done this kind of thing before
-or
-
-We recommend every repository include a README, LICENSE, and .gitignore.
-…or create a new repository on the command line
-
-echo "# Swing_DevMedia" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:MarxWilliam/Swing_DevMedia.git
-git push -u origin master
-
-…or push an existing repository from the command line
-
-git remote add origin git@github.com:MarxWilliam/Swing_DevMedia.git
-git push -u origin master
-
-…or import code from another repository
-
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
 
 

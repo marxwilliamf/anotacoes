@@ -1,0 +1,104 @@
+Anotações Mysql
+
+
+#Instalação MySQL Zip no Windows
+
+Criar pasta mysql_data em "C:\mysql\mysql_data"
+No arquivo "my.ini" dentro do diretório de instalação do MySQL "C:\mysql\mysql-8.0.20-winx64"
+
+[client]
+port=3306
+socket=/tmp/mysql.sock
+
+[mysqld]
+basedir="C:\mysql\mysql-8.0.20-winx64"
+datadir="C:\mysql\mysql_data"
+port=3306
+socket=/tmp/mysql.sock
+key_buffer_size=16M
+max_allowed_packet=128M
+
+[mysqldump]
+quick
+
+Após isso configurado setar PATH do Windows ;C:\mysql\mysql-8.0.20-winx64\bin
+
+mysqld --initialize
+
+C:\mysql\mysql-8.0.20-winx64\data\DESKTOP-GCRT0GU.err
+
+no final desse arquivo a senha do root -> [Server] A temporary password is generated for root@localhost: xxxxxxxxxxxx
+
+para instalar o serviço
+
+mysqld --install "MySQL Server"
+
+se não tiver instalado o serviço pode inicializar o MySQL comando
+mysqld --console       //Mas isso não é necessario com i serviço criado.
+
+
+##################################################################################
+
+### Criando e passando permições para o usuário:
+
+
+GRANT ALL PRIVILEGES ON * . * TO 'novousuario'@'localhost';
+
+FLUSH PRIVILEGES;
+
+ALL PRIVILEGES- como vimos anteriormente, isso daria a um usuário do MySQL todo o acesso a uma determinada base de dados (ou se nenhuma base de dados for selecionada, todo o sistema)
+CREATE- permite criar novas tabelas ou bases de dados
+DROP- permite deletar tableas ou bases de dados
+DELETE- permite deletar linhas das tabelas
+INSERT- permite inserir linhas nas tabelas
+SELECT- permite utilizar o comando Select para ler bases de dados
+UPDATE- permite atualizar linhas das tabelas
+GRANT OPTION- permite conceder ou revogar privilégios de outros usuários 
+
+GRANT [tipo de permissão] ON [nome da base de dados].[nome da tabela] TO ‘[nome do usuário]’@'localhost’;
+GRANT permission1, permission2 ON database_name.table_name TO 'database_user'@'localhost';
+GRANT ALL PRIVILEGES ON database_name.* TO 'database_user'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'database_user'@'localhost';
+GRANT ALL PRIVILEGES ON database_name.table_name TO 'database_user'@'localhost'; 
+GRANT SELECT, INSERT, DELETE ON database_name.* TO database_user@'localhost';
+GRANT ALL PRIVILEGES ON dbTest.* To 'user'@'hostname' IDENTIFIED BY 'password';
+
+REVOKE [tipo de permissão] ON [nome da base de dados].[nome da tabela] FROM ‘[nome do usuário]’@‘localhost’;
+REVOKE ALL PRIVILEGES ON database_name.* TO 'database_user'@'localhost';
+
+mysql -u root -p
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'user_password';
+
+CREATE USER 'newuser'@'10.8.0.5' IDENTIFIED BY 'user_password';   //Host Específico
+CREATE USER 'newuser'@'%' IDENTIFIED BY 'user_password';    //To create a user that can connect from any host, use the '%' wildcard as a host part:
+
+FLUSH PRIVILEGES;
+
+ALTER USER 'user-name'@'localhost' IDENTIFIED BY 'NEW_USER_PASSWORD';
+FLUSH PRIVILEGES;
+
+ou
+
+UPDATE mysql.user SET authentication_string = PASSWORD('NEW_USER_PASSWORD')
+WHERE User = 'user-name' AND Host = 'localhost';
+FLUSH PRIVILEGES;
+
+ou
+
+SET PASSWORD FOR 'user-name'@'localhost' = PASSWORD('NEW_USER_PASSWORD');
+FLUSH PRIVILEGES;
+
+
+DROP USER ‘demo’@‘localhost’;
+
+SHOW GRANTS FOR 'database_user'@'localhost';
+
+
+################
+CREATE USER 'developer'@'localhost' IDENTIFIED BY 'user_password';
+GRANT ALL PRIVILEGES ON *.* TO 'developer'@'localhost';
+FLUSH PRIVILEGES;
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'NEW_USER_PASSWORD';
+FLUSH PRIVILEGES;
+##
