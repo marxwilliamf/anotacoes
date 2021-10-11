@@ -163,6 +163,57 @@ git config --global push.default current
 
 
 
+##########################################################################
+
+Instalando GItHub Cli no Linux Debian
+
+Debian, Ubuntu Linux, Raspberry Pi OS (apt)
+Install:
+
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh
+Note: If you get the error "gpg: failed to start the dirmngr '/usr/bin/dirmngr': No such file or directory", try installing the dirmngr package: sudo apt install dirmngr.
+
+Upgrade:
+
+sudo apt update
+sudo apt install gh
+
+
+###########################################################################
+
+
+Via OAuth and personal access tokens
+
+We recommend you use OAuth tokens to authenticate to the GitHub API. OAuth tokens include personal access tokens and enable the user to revoke access at any time.
+
+$ curl -u username:token https://api.github.com/user
+This approach is useful if your tools only support Basic Authentication but you want to take advantage of OAuth access token security features.
+
+
+###############################
+Personal Access Token
+
+Cria o token no site
+
+
+Adicionando Repositório
+	Cria Repositorio no site do GitHub como esse "wfm-algafood-api"
+
+	No terminal linux:
+	
+		git init 	//inicializa o repositorio na pasta local com os códigos
+		
+		git remote add origin https://github.com/MarxWilliam/wfm-algafood-api.git
+
+		faz um primeiro commit
+
+		git push -u origin master
+
+		Usa o Personal Access Token configurado no site, onde foi dados as permissões específicas e gerado um token que é usado como senha.
+
 
 
 
