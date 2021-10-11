@@ -18,6 +18,8 @@ git push -u origin master
 
 git config --global user.name = "William Felipe Marx"
 git config --global user.email = "marxwilliamf@gmail.com"
+git config --global init.defaultBranch master
+
 
 touch texto.txt
 git init
