@@ -1,3 +1,231 @@
+Android Studio
+
+Não instalar como root, usar usuario normal para não dar problema nas permissões.
+
+/usr/share/applications
+/usr/local/share/applications
+
+
+STUDIO_JDK path
+
+
+Sudo
+
+	Caso não exista, criar um usuário sudo adduser <username>
+	Adicionar ao grupo de sudo do linux sudo adduser <username> sudo
+	Caso o usuário esteja logado, deverá fazer logout e login para os novos privilégios valerem
+
+
+Android Studio
+
+
+	Bibliotecas necessárias para máquinas de 64 bits
+
+	Se você estiver executando uma versão do Ubuntu de 64 bits, será necessário instalar algumas bibliotecas de 32 bits com o seguinte comando:
+
+	sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+
+
+	Instalar NTFS 
+
+	apt-get update && apt-get install ntfs-3g
+
+
+~/.bashrc
+
+
+	export ANDROID_HOME=$HOME/Android/Sdk
+	export PATH=$PATH:$ANDROID_HOME/tools
+	export PATH=$PATH:$ANDROID_HOME/platform-tools
+	export ANDROID_SDK_ROOT=$ANDROID_HOME
+	export PATH="$PATH:/usr/local/share/flutter/flutter/bin"
+	alias studio="/./home/alemao/Downloads/android-studio/bin/studio.sh"
+	alias sts="/./home/alemao/Downloads/sts-4.11.1.RELEASE/SpringToolSuite4"
+	alias stsIcon="//home/alemao/Downloads/sts-4.11.1.RELEASE/icon.xpm"
+
+
+
+xfce4-panel --disable-wm-check
+
+
+
+run on gnome fix on gnome gdb conflict with gnome gdbus.error org.freedesktop.dbus.error.serviceunknown the name org.xfce.panel
+
+
+sudo apt-get purge gnome-session
+sudo apt-get autoremove 
+sudo apt-get autoclean
+sudo apt-get install gnome-session
+startx
+
+#############################################################################################
+
+
+    mysql is client
+    mysqld is the server
+
+Try: sudo service mysqld start
+
+To check that service is running use: ps -ef | grep mysql | grep -v grep.
+
+Uninstalling:
+
+sudo apt-get purge mysql-server
+sudo apt-get autoremove
+sudo apt-get autoclean
+
+Re-Installing:
+
+sudo apt-get update
+sudo apt-get install mysql-server
+
+
+
+Yes, should try reinstall mysql, but use the --reinstall flag to force a package reconfiguration. So the operating system service configuration is not skipped:
+
+sudo apt --reinstall install mysql-server
+
+
+sudo /etc/init.d/mysql start
+
+systemctl status mysql
+
+
+sudo apt-get install libaio1
+sudo apt-get install libmysqlclient21
+
+
+############################################
+
+
+sudo apt update
+sudo apt install snapd 
+sudo snap install core
+
+##################
+
+sudo snap install mysql-workbench-community
+
+
+#####################################################################
+
+
+Download the Google signing key and install it.
+
+wget -qO - https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/googlechrome-linux-keyring.gpg
+d
+Set up the Google Chrome repository.
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/googlechrome-linux-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+ 	
+Install Google Chrome
+
+Update the repository index.
+
+	sudo apt update
+
+Install Google Chrome using the below command.
+
+	sudo apt install -y google-chrome-stable
+
+If you want to try the beta version of Google Chrome, use the following command to install it.
+
+	sudo apt install -y google-chrome-beta
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+sudo apt-get install mysql-server
+
+
+
+::::::::::::::::::::::::::::::::::
+
+
+
+sudo add-apt-repository ppa:eugenesan/ppa
+sudo apt-get update
+
+To install smartgit (after adding the PPA) run:
+
+sudo apt-get install smartgit
+
+To install smartgithg (after adding the PPA) run:
+
+sudo apt-get install smartgithg
+
+
+::::::::::::::::::
+
+remove diretórios inteiros -> rm -rfvd ficheiro
+
+
+
+/////////////////////////
+
+Descompactando
+
+tar -xzvf arquivo.tar.gz
+
+Compactando 
+tar -czvf arquivo.tar.gz pasta
+
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+flutter config --android-sdk {path}
+flutter doctor --android-licenses
+flutter config --android-studio-dir="/usr/local/share/studio/android-studio"
+
+Enviroment Java
+
+usei este
+export JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
+export JAVA_SDK=$JAVA_HOME
+export PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+
+
+
+bashrc
+
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_SDK=$JAVA_HOME
+export PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export STUDIO_SDK=$ANDROID_HOME
+export STUDIO_HOME=/usr/local/share/studio/android-studio/bin/
+export PATH=$PATH:$STUDIO_HOME
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+
+export PATH="$PATH:/usr/local/share/flutter/flutter/bin"
+	
+alias studio="/./usr/local/share/studio/android-studio/bin/studio.sh"
+alias sts="/./home/alemao/Downloads/sts-4.11.1.RELEASE/SpringToolSuite4"
+alias stsIcon="//home/alemao/Downloads/sts-4.11.1.RELEASE/icon.xpm"
+
+
+
+
+
+
+#########################################################
+
+
+sudo apt install firmware-ralink firmware-atheros firmware-realtek firmware-iwlwifi firmware-b43-installer firmware-b43legacy-installer atmel-firmware  firmware-brcm80211 firmware-ipw2x00 firmware-libertas libertas-firmware zd1211-firmware
+ 
+ 
+ 
+
+
 ## Arquivos Android ############################################################
 
 sudo apt-get install jmtpfs mtp-tools
