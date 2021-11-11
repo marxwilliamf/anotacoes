@@ -42,7 +42,7 @@ Android Studio
 	alias studio="/./home/alemao/Downloads/android-studio/bin/studio.sh"
 	alias sts="/./home/alemao/Downloads/sts-4.11.1.RELEASE/SpringToolSuite4"
 	alias stsIcon="//home/alemao/Downloads/sts-4.11.1.RELEASE/icon.xpm"
-
+	alias idea="/./home/alemao/Downloads/idea-IC-212.5284.40/bin/idea.sh"
 
 
 xfce4-panel --disable-wm-check

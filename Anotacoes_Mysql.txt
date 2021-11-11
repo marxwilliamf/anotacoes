@@ -102,3 +102,18 @@ FLUSH PRIVILEGES;
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'NEW_USER_PASSWORD';
 FLUSH PRIVILEGES;
 ##
+
+
+
+##################################
+Alterando Senha Root
+
+
+FLUSH PRIVILEGES;
+Para o MySQL 5.7.6 e mais recentes, bem como o MariaDB 10.1.20 e mais recentes, use o seguinte comando:
+
+	ALTER USER 'root'@'localhost' IDENTIFIED BY 'nova-senha';
+Para o MySQL 5.7.5 e mais antigo, bem como o MariaDB 10.1.20 e mais antigo, use:
+
+	SET PASSWORD FOR 'root'@'localhost' = PASSWORD('nova-senha');
+

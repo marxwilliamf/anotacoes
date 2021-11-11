@@ -1,0 +1,7 @@
+Anotações Diversas
+
+InteliJ
+
+	Plugins
+		JPA
+			JPA Buddy

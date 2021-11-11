@@ -63,6 +63,11 @@ git checkout master // retorna ao ramo master
 git diff --cached //mostra modificações não adicionadas ao index	
 
 
+Clear Git Cache using rm
+	git rm --cached filename
+
+
+
  git remote //mostra repositórios remotos
 
 
