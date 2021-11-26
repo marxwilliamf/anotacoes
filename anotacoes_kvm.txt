@@ -1,0 +1,30 @@
+Anotações KVM
+
+
+
+Ref.: H2S Media -> How to install KVM on Ubuntu 20.04 Graphical & headless server 
+	- https://www.how2shout.com/how-to/how-to-install-kvm-on-ubuntu-20-04-graphical-headless-server.html
+
+
+sudo apt update
+
+lsmod | grep kvm
+
+sudo apt install cpu-checker
+
+sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virtinst
+
+
+sudo adduser username libvirt
+
+service libvirtd status
+
+sudo apt install virt-viewer
+
+		sudo virt-install --name=Slax --disk path=/var/lib/libvirt/images/dsk.qcow2,size=10 --graphics spice --vcpu=1 --ram=1024 
+		--cdrom Downloads/	slax.ISO --network bridge=virbr0
+
+
+virt-viewer --connect qemu+ssh://username@server-ip/system VMname
+
+sudo apt install virt-manager

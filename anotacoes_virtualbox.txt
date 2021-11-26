@@ -1,0 +1,7 @@
+AnotaÇões VirtualBox
+
+vboxmanage list vms
+
+vboxmanage modifyvm "Xen" --nested-hw-virt on
+
+egrep --color -i "svm|vmx" /proc/cpuinfo

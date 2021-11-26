@@ -1,0 +1,33 @@
+Xen no Debian
+
+sudo apt-get install xen-system-amd64
+
+egrep '(vmx|svm)' /proc/cpuinfo
+
+
+apt-get install bridge-utils
+
+nano /etc/network/interfaces
+
+	auto lo
+    iface lo inet loopback
+
+    auto eth0
+    iface eth0 inet manual
+    
+    auto xenbr0
+    iface xenbr0 inet dhcp
+         bridge_ports eth0
+         
+debian : systemctl restart networking
+service networking restart
+
+brctl show
+
+gedit /etc/default/grub
+
+
+GRUB_DEFAULT=2
+
+
+update-grub

@@ -224,6 +224,10 @@ sudo apt install firmware-ralink firmware-atheros firmware-realtek firmware-iwlw
  
  
  
+ifconfig
+
+sudo apt-get install net-tools
+ 
 
 
 ## Arquivos Android ############################################################
