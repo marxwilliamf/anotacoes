@@ -1,5 +1,15 @@
 Anotações Mysql
 
+Instalação Linux Debian 11
+
+sudo apt update
+sudo apt -y  install wget
+wget https://repo.mysql.com//mysql-apt-config_0.8.20-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.20-1_all.deb
+
+
+
+sudo snap install mysql-workbench-community
 
 #Instalação MySQL Zip no Windows
 
