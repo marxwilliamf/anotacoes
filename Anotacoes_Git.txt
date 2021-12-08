@@ -37,16 +37,29 @@ git graph --oneline
 
 git checkout -b teste // cria um novo branch
 git checkout master // retorna ao ramo master no HEAD do master
+git checkout anotacoes.txt		//volta o arquivo para o estado do ultimo commit
+
+git reset HEAD --hard			//ainda não fez commit da alteração quer retornar para o ultimo commit 
+//volta tudo que está mapeado para o ultimo commit 
+//parece que o que não está mapeado não é alterado permanessendo como estava CONFERIR
+
+git reset HEAD^ --hard    		//retorna para último commit após um commit já efetuado
+
 
 git log --graph --oneline --all  // todos os ramos
 git log -2 //mostra os dois ultimos commits "-n" últimos "n" commits
 git log --oneline -2 //resumo últimos dois commitas
-git log --before="28-06-2020" //mostra logs anteriores à esta data
-git log --before="28-06-2020" -2 --oneline //mostra os 2 logs anteriores à esta data em uma linha
-git log --before="1 week ago" -5//mostra 5 logs anteriores a uma semana
-git log --after="28-06-2020" //mostra logs posteriores à esta data
-git log --after="1 week ago" //mostra logs de até uma semana atrás;
-git log --since="2 weeks ago" // ou "2 days ago" ...
+git log --before="28-06-2020" 			//mostra logs anteriores à esta data
+git log --before="28-06-2020" -2 --oneline 	//mostra os 2 logs anteriores à esta data em uma linha
+git log --before="1 week ago" -5		//mostra 5 logs anteriores a uma semana
+git log --after="28-06-2020" 			//mostra logs posteriores à esta data
+git log --after="1 week ago" 			//mostra logs de até uma semana atrás;
+git log --since="2 weeks ago" 			// ou "2 days ago" ...
+git diff --staged				//mostra diferença entre o arquivo atual e o ultimo commit // é preciso o arquivo estar staged //git add arquivoModificado.txt
+git diff da4e7f8 				//diferença ente o head atual e o commit com essa hash da4e7f8
+git diff 630cb9e 49bdd97			//diferença entre o commit 1 e 2, sendo o 1 o mais recente. 
+// tanto faz a ordem ele mostra as diferenças, o que muda é como aparece a modificação, como adicionada ou removida
+git diff 49bdd97..630cb9e 			//pode-se também utilizar ".." parece funcionar igual
 
 git log --author "Will"
 
@@ -217,7 +230,7 @@ precisa fazer ambas as duas operações para ser equivalente eo comando git mv e
 git add anotacoes_kvm.txt
 git add Anotacoes_KVM.txt
 
-... basta dai fazer commit como em mv
+... basta dai fazer commit como em mv //no meu caso ainda tive que fazer //git add Anotacoes_Git.txt //pra ficar tudo atualizado.
 
 git commit -m "Atualizando anotações Git e renomeando arquivos;"
 
@@ -238,7 +251,7 @@ caso delete na pasta ele não fica pronto pra commit e aparece listado em vermel
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- git reset --hard HEAD									//ainda não fez commit da alteração quer retornar para o ultimo commit
+git reset --hard HEAD									//ainda não fez commit da alteração quer retornar para o ultimo commit
 
  git reset 8bb0fdb										//voltando o projeto para o commit 8bb0fdb perde tudo que foi feito após esse commit
  git revert HEAD										//voltando para o commit anterior pode trocar o HEAD pela hash de qualquer commit
