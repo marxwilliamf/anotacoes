@@ -20,41 +20,240 @@ git config --global user.name = "William Felipe Marx"
 git config --global user.email = "marxwilliamf@gmail.com"
 git config --global init.defaultBranch master
 
+git config core.pager cat // mostra todos os logs de uma vez;
+git config core.pager less // mostra só o que cabe na tela mostrando o : que é igual a continua "..." 
+
+
 
 touch texto.txt
 git init
 git status
-git add * | git add .
+git add *
+git add . // adiciona todos os arquivos do projeto.
 git commit -a -m "Especificação do Commit"
 git branch ramo2git
 git log | git log --oneline | git log --graph | git log --graph --oneline
 git graph --oneline
 
 git checkout -b teste // cria um novo branch
-git checkout master // retorna ao ramo master
+git checkout master // retorna ao ramo master no HEAD do master
 
- git log --graph --oneline --all  // todos os ramos
+git log --graph --oneline --all  // todos os ramos
+git log -2 //mostra os dois ultimos commits "-n" últimos "n" commits
+git log --oneline -2 //resumo últimos dois commitas
+git log --before="28-06-2020" //mostra logs anteriores à esta data
+git log --before="28-06-2020" -2 --oneline //mostra os 2 logs anteriores à esta data em uma linha
+git log --before="1 week ago" -5//mostra 5 logs anteriores a uma semana
+git log --after="28-06-2020" //mostra logs posteriores à esta data
+git log --after="1 week ago" //mostra logs de até uma semana atrás;
+git log --since="2 weeks ago" // ou "2 days ago" ...
 
- git log --since="2 weeks ago"
+git log --author "Will"
 
- git log --no-merges
- git log pasta/							   				//retorna todos os commits dessa pasta
- git log pasta/arquivo.txt                 				//retorna todos os commits desse arquivo
+git help log //para ver opções
 
- git log -p pasta/ 						   				//mostra o pathches "pasta" com todos os commits e suas alterações detalhadas
 
- git log --stat  						   				// mostra quais arquivos foram alteradoe em cada commit       
- git log --pretty=oneline --graph		   				// mostra doda a hash
- git log --pretty=short					   				//mostra apenas o autor e a menssagem do commit sem a datas pode adicionar --graph
- git log --pretty=format:'%h : %s' --graph 				// mostra o grafo com o hash e a menssagem
- git log --pretty=format:'%h : %s' --topo-order --grap  //commits aparecerem em order topológica (ex.: commits descendentes são mostrados antes de seus pais).
- git log --pretty=format:'%h : %s' --date-order --grap  //ordena por timestamp pore´m nenhum pai vem antes dos filhos, as linhas de desenvolvimento não são agrupadas juntas
+git log --no-merges
+git log pasta/							   				//retorna todos os commits dessa pasta
+git log pasta/arquivo.txt                 				//retorna todos os commits desse arquivo
 
+git log -p pasta/ 						   				//mostra o pathches "pasta" com todos os commits e suas alterações detalhadas
+
+git log --stat  						   				// mostra quais arquivos foram alteradoe em cada commit
+git log --pretty=oneline --graph		   				// mostra doda a hash
+git log --pretty=short					   				//mostra apenas o autor e a menssagem do commit sem a datas pode adicionar --graph
+git log --pretty=format:'%h : %s' --graph 				// mostra o grafo com o hash e a menssagem
+git log --pretty=format:'%h : %s' --topo-order --grap  //commits aparecerem em order topológica (ex.: commits descendentes são mostrados antes de seus pais).
+git log --pretty=format:'%h : %s' --date-order --grap  //ordena por timestamp pore´m nenhum pai vem antes dos filhos, as linhas de desenvolvimento não são agrupadas juntas
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+git log
+
+commit 62b04bebe9350e931da292b64ec4d4030ab5472a (HEAD -> master, origin/master, origin/HEAD)
+Author: = <=>
+Date:   Mon Dec 6 05:17:50 2021 -0300
+
+    Atualizando.
+
+commit da4e7f8f9e5ea017276f74c80c36cf9303b17787
+Author: = <=>
+Date:   Fri Nov 26 05:49:12 2021 -0300
+
+    Novas Anotações.
+: // <- nesses dois pontos posso escrever "/palavrapesquisa" para pesquisar uma palavra nos logs. // aperta "b" volta para a primeira ocorrência da palavra //"n" vai para próxima ocorrÊncia  // "q" sai.
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Renomeando arquivo do projeto pelo Git mv serve para arquivos e diretórios
+
+git mv Anotacoes_docker.txt Anotacoes_Docker.txt
+git commit -m "Renomeado arquivo Docker;" // no caso não fiz esse commit mas seria asssim
+
+/////////////////////
+
+Renomeando na pasta ou editor -> anotacoes_diversas.txt para Anotacoes_Diversas.txt
+
+git status
+
+...
+
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    Anotacoes_docker.txt -> Anotacoes_Docker.txt                         //como não tinha feito o commit anterior ele aparece assim
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Anotacoes_Git.txt
+	deleted:    anotacoes_diversas.txt						//arquivo renomeado aparece como deletado
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Anotacoes_Diversas.txt	
+	
+///
+	
+git status
+
+...
+
+
+git add anotacoes_diversas.txt //
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    Anotacoes_docker.txt -> Anotacoes_Docker.txt
+	deleted:    anotacoes_diversas.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Anotacoes_Git.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Anotacoes_Diversas.txt
+
+							//aparece um novo arquivo para mapear
+
+///
+
+git add Anotacoes_Diversas.txt
+
+...
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    anotacoes_diversas.txt -> Anotacoes_Diversas.txt
+	renamed:    Anotacoes_docker.txt -> Anotacoes_Docker.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Anotacoes_Git.txt
+
+
+
+///
+
+Remomei na pasta "anotacoes_maven.txt" para "Anotacoes_Maven.txt"
+
+git add Anotacoes_Maven.txt
+git status 
+
+...
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    anotacoes_diversas.txt -> Anotacoes_Diversas.txt
+	renamed:    Anotacoes_docker.txt -> Anotacoes_Docker.txt
+	new file:   Anotacoes_Maven.txt							//ainda aparece como novo arquivo
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Anotacoes_Git.txt
+	deleted:    anotacoes_maven.txt							//ainda aparece como deletado
+
+///
+
+git add anotacoes_maven.txt 								//precisa adicionar o arquivo antigo para o git saber que ele não foi deletado.
+git add Anotacoes_Git.txt
+git status 
+
+n branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    anotacoes_diversas.txt -> Anotacoes_Diversas.txt
+	renamed:    Anotacoes_docker.txt -> Anotacoes_Docker.txt
+	modified:   Anotacoes_Git.txt
+	renamed:    anotacoes_maven.txt -> Anotacoes_Maven.txt
+
+
+///////////////////
+///RESUMO
+
+renomei anotacoes_kvm.txt na pasta
+
+precisa fazer ambas as duas operações para ser equivalente eo comando git mv e estár pronto pra commit
+git add anotacoes_kvm.txt
+git add Anotacoes_KVM.txt
+
+... basta dai fazer commit como em mv
+
+git commit -m "Atualizando anotações Git e renomeando arquivos;"
+
+//////////////////////
+
+git rm rascunho2.txt //deleta o arquivo e deixa pronto pra commit //aparece listado com a cor verde
+
+caso delete na pasta ele não fica pronto pra commit e aparece listado em vermelho necessitando fazer //git add rascunho2.txt // pra então ele ficar verde e poder ser commitado.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  git reset --hard HEAD									//ainda não fez commit da alteração quer retornar para o ultimo commit
 
  git reset 8bb0fdb										//voltando o projeto para o commit 8bb0fdb perde tudo que foi feito após esse commit
  git revert HEAD										//voltando para o commit anterior pode trocar o HEAD pela hash de qualquer commit
  
+ 
+ 
+git add <file>
+git reset <file>
+
+git rm --cached <added_file_to_undo>
+
+//atualiza o ultimo commit
+git commit --amend -m "atualizando ultimo commit" //nesse caso pode-se fazer uma operação como add e então fazer um amend
+
+
  no ramos master -> git merge teste
  pode dar conflite mas abriu o processo para parar tem que dar uum git merge --abort
  pra continuar resolver o conflito e fazer um commit
