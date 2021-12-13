@@ -16,14 +16,18 @@ git push -u origin master
 
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 
-git config --global user.name = "William Felipe Marx"
-git config --global user.email = "marxwilliamf@gmail.com"
+git config --global user.name "William Felipe Marx"
+git config --global user.email "marxwilliamf@gmail.com"
+
+git config user.name "William Felipe Marx"
+git config user.email "marxwilliamf@gmail.com"
+
 git config --global init.defaultBranch master
 
 git config core.pager cat // mostra todos os logs de uma vez;
 git config core.pager less // mostra só o que cabe na tela mostrando o : que é igual a continua "..." 
 
-
+git config credential.helper store
 
 touch texto.txt
 git init
@@ -244,13 +248,74 @@ caso delete na pasta ele não fica pronto pra commit e aparece listado em vermel
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+git branch 			// lista os ramos existentes
+git branch funcionalidadeA	// cria ramo funcionalidadeA
+git branch funcionalidadeB	// cria ramo funcionalidadeB
 
+git branch
+git checkout funcionalidadeB
+
+git branch 			//Ok
+touch arquivoB.java
+
+git checkout master		// volta pra master antes de fazer merge
+git merge funcionalidadeB
+git rebase funcionalidadeB
+
+
+git checkout -b funcionalidadeC	// cria um branch novo e já entra nele de uma só vez
+
+
+Deletando branches
+
+git branch -d funcionalidadeA	// precisa ser feito merge antes de deletar o branch
+git branch -D funcionalidadeA	// deleta o branch sen necessitar do merge,
 
 
 
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Clonando Repositórios
+
+git clone /home/alemao/Git/anotacoes			//clonando repositório de uma pasta
+git clone /home/alemao/Git/anotacoes .			//clonando repositório de uma pasta dentro de uma pasta específica, sem criar diretorio próprio
+
+
+
+
+
+git fetch						//baixa os arquivos de um repositorio remoto, não os mostra na pasta ainda
+git rebase						// faz o rebase, e os arquivos baixados no rebase aparecem na pasta principal
+
+git pull 						// equivalente a fazer git fetch e git rebase
+	^O						//gravar      // "^" significa ctrl
+	^X						//sair
+
+
+
+
+git init --bare						// cria um repositório local centralizado, onde outros usuarios podem mandar seus commits como no github
+
+
+git tag v1.0						// cria a tag v1.0
+git tag							// lista as tags existentes
+git push origin v1.0					// manda para repositorio originário (origin, remoto no github ou um bare) a tag v1.0
+git pull						// o outro usuario precisa atualizar seu repositorio para ver a tag
+git checkout v1.0					// (detached) desencaichado da cabeça (HEAD), não pode fazer commits numa tag
+git switch -c novo-ramo-correcoes-v1.0					// para poder fazer commits posteriores a tag
+git add novo_arquivo.java
+git commit -m "Atualizando"
+gir checkout master
+git rebase novo-ramo-correcoes-v1.0 | git merge	novo-ramo-correcoes-v1.0
+git tag v1.1
+git push origin v1.1
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 git reset --hard HEAD									//ainda não fez commit da alteração quer retornar para o ultimo commit
 
  git reset 8bb0fdb										//voltando o projeto para o commit 8bb0fdb perde tudo que foi feito após esse commit
@@ -285,7 +350,8 @@ Clear Git Cache using rm
 
  um repositório existente localmente
  git remote add origin http://......./git.git
- git push -u origin master
+ git push -u origin master				// manda ramo master para o repositorio remoto origin
+ git remote -v						// lista repositorios remotos origin
 
  git push //manda pro repositório remoto
 
