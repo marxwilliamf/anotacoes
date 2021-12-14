@@ -19,6 +19,9 @@ git push -u origin master
 git config --global user.name "William Felipe Marx"
 git config --global user.email "marxwilliamf@gmail.com"
 
+path global config on linux /home/user/.gitconfig
+path para commits no github https://github.com/MarxWilliam/anotacoes/commits
+
 git config user.name "William Felipe Marx"
 git config user.email "marxwilliamf@gmail.com"
 
@@ -28,6 +31,7 @@ git config core.pager cat // mostra todos os logs de uma vez;
 git config core.pager less // mostra só o que cabe na tela mostrando o : que é igual a continua "..." 
 
 git config credential.helper store
+git config --global --unset credential.helper
 
 touch texto.txt
 git init
@@ -42,7 +46,10 @@ git graph --oneline
 git checkout -b teste // cria um novo branch
 git checkout master // retorna ao ramo master no HEAD do master
 git checkout anotacoes.txt		//volta o arquivo para o estado do ultimo commit
-
+git checkout -- . 			// antes de fazer git add esse comando volta ao estado do ultimo commit
+git checkout -- NomeArquivo.java	// volta apenas este arquivo especificamente para o estado do ultimo commit
+git checkout HEAD -- NomeArquivo.java	// Se ja fez o git add para o arquivo volta ele para o estado do ultimo commit
+git checkout HEAD -- .			// volta todos os arquivos adicionados para o estado do ultimo commit
 git reset HEAD --hard			//ainda não fez commit da alteração quer retornar para o ultimo commit 
 //volta tudo que está mapeado para o ultimo commit 
 //parece que o que não está mapeado não é alterado permanessendo como estava CONFERIR
@@ -290,7 +297,7 @@ git fetch						//baixa os arquivos de um repositorio remoto, não os mostra na p
 git rebase						// faz o rebase, e os arquivos baixados no rebase aparecem na pasta principal
 
 git pull 						// equivalente a fazer git fetch e git rebase
-	^O						//gravar      // "^" significa ctrl
+	^O	+ Enter					//gravar      // "^" significa ctrl
 	^X						//sair
 
 
@@ -303,6 +310,7 @@ git tag v1.0						// cria a tag v1.0
 git tag							// lista as tags existentes
 git push origin v1.0					// manda para repositorio originário (origin, remoto no github ou um bare) a tag v1.0
 git pull						// o outro usuario precisa atualizar seu repositorio para ver a tag
+git pull origin master					// forma mais especifica, repositorio remoto origin no branch master
 git checkout v1.0					// (detached) desencaichado da cabeça (HEAD), não pode fazer commits numa tag
 git switch -c novo-ramo-correcoes-v1.0					// para poder fazer commits posteriores a tag
 git add novo_arquivo.java
@@ -317,11 +325,11 @@ git push origin v1.1
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 git reset --hard HEAD									//ainda não fez commit da alteração quer retornar para o ultimo commit
+git reset HEAD~1       									//apaga N commits, não deixando histórico no log, o número após ~ diz quantos commits retroceder
+git reset 8bb0fdb										//voltando o projeto para o commit 8bb0fdb perde tudo que foi feito após esse commit
+git revert HEAD										//voltando para o commit anterior pode trocar o HEAD pela hash de qualquer commit
 
- git reset 8bb0fdb										//voltando o projeto para o commit 8bb0fdb perde tudo que foi feito após esse commit
- git revert HEAD										//voltando para o commit anterior pode trocar o HEAD pela hash de qualquer commit
- 
- 
+git revert 9cf2ff3 	// volta para o estado do commit indicado criando para isso um novo commit, preservando o commit que foi retrocedido no historico de logs para possíveis usos 
  
 git add <file>
 git reset <file>
@@ -355,6 +363,16 @@ Clear Git Cache using rm
 
  git push //manda pro repositório remoto
 
+
+::::::::::::::::::::::::::::::
+Trabalhando com Issues
+
+Cada issue é identificada por #N
+
+para fechar uma issue no commit basta colocar closes #n na mensagem do commit
+
+git commit -m "Corrigido erro tal. Closes #1"
+
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 
 git config --help
@@ -369,10 +387,13 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 # change the origin remote from https to ssh
 
 git remote set-url origin git@github.com:<Username>/<Project>.git
+git remote set-url origin https@github.com:<Username>/<Project>.git
 
 ##########
 
 git remote set-url origin git://github.com/MarxWilliam/anotacoes.git
+git remote set-url origin https://MarxWilliam@github.com/MarxWilliam/anotacoes.git //diz que o usuario a fazer a autenticaçãp dos commits é MarxWilliam
+
 ###############
 
 
