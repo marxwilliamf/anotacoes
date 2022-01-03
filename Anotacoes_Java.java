@@ -1,3 +1,7 @@
+java -jar jarFileName.jar
+
+
+
 Servlets
 
 	response.sendRedirect("index2.jsp");	

@@ -323,9 +323,9 @@ git push origin v1.1
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
+git push --force -u origin master
 git reset --hard HEAD									//ainda não fez commit da alteração quer retornar para o ultimo commit
-git reset HEAD~1       									//apaga N commits, não deixando histórico no log, o número após ~ diz quantos commits retroceder
+git reset HEAD~1       									//apaga N commits, Não Modifica os arquivos da ṕasta,apaga apenas o histórico de log, o número após ~ diz quantos commits retroceder
 git reset 8bb0fdb										//voltando o projeto para o commit 8bb0fdb perde tudo que foi feito após esse commit
 git revert HEAD										//voltando para o commit anterior pode trocar o HEAD pela hash de qualquer commit
 
