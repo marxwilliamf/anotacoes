@@ -457,6 +457,7 @@ git clone --bare PrimeirasJanelas /home/user/gitclone/PrimeirasJanelas.git
 git add <arquivos...> 
 
 git commit -m "comentário qualquer"
+git commit -a -m "comentário qualquer" // -a faz com que todos os arquivos já rastreados com add pelo menos uma vez sejam comitados
 
  git push -u origin master
 The authenticity of host 'github.com (192.30.253.112)' can't be established.
