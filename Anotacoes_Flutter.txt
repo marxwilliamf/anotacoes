@@ -1,0 +1,21 @@
+flutter doctor --android-licenses
+
+sdkmanager --licenses
+
+
+Windows:
+
+flutter config --android-sdk="$HOME/Android/Sdk"
+flutter config --android-sdk=C:\Users\User\AppData\Local\Android\Sdk\tools\bin
+flutter config --android-studio-dir=/snap/android-studio/current/android-studio
+flutter config --android-studio-dir=C:\Program Files\Android\Android Studio
+
+C:\src\flutter\bin
+
+
+
+
+
+
+
+flutter config --enable-windows-desktop

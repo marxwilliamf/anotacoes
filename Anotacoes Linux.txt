@@ -1,3 +1,15 @@
+
+Como adicionar o Windows 10 ao menu de boot no Grub
+Tipo de notícia: Desenvolvimento
+
+    Abra o terminal;
+    Digite sudo os-prober
+    Se encontrar uma instalação do Windows 10, digite sudo update-grub e será adicionado a opção.
+    Basta reiniciar o computador para testar se foi adicionado a opção com sucesso.
+
+
+
+//////////////////////////////////////////////////////////////////
 sudo iw reg get
 sudo iw reg set BR
 sudo iw reg get
@@ -120,6 +132,7 @@ Android Studio
 	export PATH="$PATH:/usr/local/share/flutter/flutter/bin"
 	alias studio="/./home/alemao/Downloads/android-studio/bin/studio.sh"
 	alias sts="/./home/alemao/Downloads/sts-4.11.1.RELEASE/SpringToolSuite4"
+	alias eclipse="/./usr/local/share/programas/eclipse/eclipse/eclipse"
 	alias stsIcon="//home/alemao/Downloads/sts-4.11.1.RELEASE/icon.xpm"
 	alias idea="/./home/alemao/Downloads/idea-IC-212.5284.40/bin/idea.sh"
 
@@ -292,8 +305,7 @@ alias sts="/./home/alemao/Downloads/sts-4.11.1.RELEASE/SpringToolSuite4"
 alias stsIcon="//home/alemao/Downloads/sts-4.11.1.RELEASE/icon.xpm"
 
 
-
-
+export TERM=terminal
 
 
 #########################################################
@@ -481,9 +493,71 @@ sudo apt-get install texlive-math-extra
 
 
 
+/////////////////////////////////
+
+Spotify
+
+curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+
+sudo apt-get update && sudo apt-get install spotify-client
 
 
 
+Formatando Partição Ext4
+fdisk /dev/sdb  -> n -> p -> w
+mkfs.ext4 -L "ssd"
+FSTAB
+
+/etc/fstab
+LABEL=ssd /media/alemao/ssd ext4 defaults,user 0 2
 
 
+sudo apt install blktool
+
+lsblk
+
+
+
+apt-key esta obsoleto
+
+GPG
+
+Para fazer o download usando wget e adicionar tal Chave OpenPGP para o seu sistema, use:
+
+Comandos para usar no terminal
+
+wget -O- "aqui vai o https://"...".asc" | gpg --dearmor | sudo tee /usr/share/keyrings/-archive-keyring.gpg
+
+
+OU
+
+curl | gpg --dearmor > /usr/share/keyrings/-archive-keyring.gpg
+
+
+
+Ultimo comando digitado
+
+sudo gpg --no-default-keyring --keyring
+
+////////////////////////////////////////
+
+/etc/systemd/logind.conf 
+
+HandleLidSwitch=ignore
+
+systemctl restart systemd-login
+
+
+//////////////////////////////
+
+ls ..   cp ../alguma coisa //lista e copia coisas do diretório superior.
+cd -   //volta ao diretorio anterior mente usado ex você esta em /usr/local e faz um cd /home ao fazer cd - volta para /usr/local
+
+alternativa à tecla home e end no terminal é Ctrl + A, e Ctrl + E, respectivamente. 
+
+abcdefghi ->   abc|defghi + Ctrl + U -> defghi + Ctrl + E /+/ Ctrl + Y-> defghiabc   //Ctrl + U recorta o que ta à esquerda e Ctrl + Y Cola o que foi copiado
+abcdefghi ->   abc|defghi + Ctrl + K -> abc + Ctrl + A /+/ Ctrl + Y-> abcdefghi      //Ctrl + K recorta o que ta à direita e Ctrl + Y Cola o que foi copiado
+
+Ctrl + L // limpa tela mas mantem a linha atual
 

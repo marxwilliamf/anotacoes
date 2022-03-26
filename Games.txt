@@ -1,0 +1,173 @@
+Games
+
+sudo apt install steam
+
+sudo apt install libgl1-mesa-dri:i386 libc6:i386 steam-libs-i386:i386
+
+properties
+
+-nojoy -fullscreen
+
+
+////////////////////////////////////////////////////////
+
+sudo apt-add-repository -y ppa:rael-gc/ubuntu-xboxdrv
+
+////////////////////////////////////////////////////////
+WineQH
+
+sudo dpkg --add-architecture i386
+cd Downloads
+wget -nc https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+
+sudo touch /etc/apt/sources.list.d/wine.list
+
+
+#deb https://dl.winehq.org/wine-builds/debian/ DEBVERSION main
+
+deb https://dl.winehq.org/wine-builds/debian/ bullseye main
+
+
+
+sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo apt update
+
+sudo apt install --install-recommends winehq-staging
+
+
+rm -r -f ~/.wine
+
+WINEARCH=win32 WINEPREFIX=~/.wine wine wineboot
+
+////////////
+WINEARCH=win32 WINEPREFIX=~/.wine wine winecfg wineboot
+WINEPREFIX=~/.wine64 winecfg
+/////
+
+source /.bashrc
+export TERM=xterm-color
+
+
+Lutris
+
+sudo touch /etc/apt/sources.list.d/lutris.list
+
+deb https://download.opensuse.org/repositories/home:/strycore/Debian_11/ ./
+
+
+
+wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_11/Release.key -O- | sudo apt-key add -
+sudo apt update
+
+sudo apt install lutris
+
+
+
+//////////
+
+sudo add-apt-repository ppa:graphics-drivers/ppa && sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install -y nvidia-driver-510 libvulkan1 libvulkan1:i386
+
+nvidia-driver-libs-i386
+
+/////////////////////////////////////////////////////////
+
+sudo apt install libnvidia-glcore libnvidia-glvkspirv
+
+
+
+
+
+
+
+
+
+
+sudo apt install -y lsb-release apt-transport-https
+
+
+Ubuntu
+
+echo "deb [signed-by=/usr/share/keyrings/riot-im-archive-keyring.gpg] https://packages.riot.im/debian/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/riot-im.list
+
+sudo apt install riot-web
+
+Debian
+
+sudo wget -O /usr/share/keyrings/riot-im-archive-keyring.gpg https://packages.riot.im/debian/riot-im-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/riot-im-archive-keyring.gpg] https://packages.riot.im/debian/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/riot-im.list
+
+
+
+
+
+
+
+
+
+
+sudo dpkg --add-architecture i386 && sudo apt update
+
+
+sudo dpkg --add-architecture i386 && sudo apt update
+sudo apt install \
+      wine \
+      wine32 \
+      wine64 \
+      libwine \
+      libwine:i386 \
+      fonts-wine
+      
+      
+
+sudo apt install wine wine32 wine64 libwine libwine:i386 fonts-wine
+
+
+
+Wine
+
+WINEPREFIX="$HOME/prefix32" WINEARCH=win32 wine wineboot
+
+
+
+
+2
+
+Test if you already have multiarch enabled:
+
+dpkg --print-foreign-architectures | grep -q i386 && sudo dpkg --add-architecture i386
+
+Then install wine32:
+
+sudo apt-get update && sudo apt-get install wine32
+
+And finally, don't delete your 64-bit wine install. just rename it to .wine64 then create a new .wine folder for your 32-bit apps:
+
+mv ~/.wine ~/.wine64 && WINEARCH=win32 wineboot
+
+
+
+
+
+
+///////////////////
+
+
+To fix the system:
+If you run 64bit architecture, you should remove all :i386 packages. Then remove all nvidia drivers and i386 architecture as well:
+$ sudo apt-get purge package1:i386 package2:i386 ...
+$ sudo apt-get purge nvidia*
+$ dpkg --remove-architecture i386
+$ sudo apt-get update
+$ sudo apt-get autoremove
+Then run:
+$ qinst-ipvideo
+and install proper nvidia drivers.
+Try your system boot to gui. It should include directx for wine. In case on unsuccess let findings here to get help.
+
+
+
+

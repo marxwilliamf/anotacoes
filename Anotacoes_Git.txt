@@ -522,6 +522,30 @@ Adicionando Repositório
 
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+Explicações em: https://blog.betrybe.com/git/git-merge/
+git merge -s recursive branch1 branch2
+
+    ours
+    theirs
+    patient
+    diff-algorithm=[patience|minimal|histogram|myers]
+    renormalize
+    no-renormalize
+    no-renames
+    find-renames[=<n>]
+    subtree[=<caminho>]
+    
+
+git merge -s resolve branch1 branch2
+git merge -s octopus branch1 branch2 branch3 branchN
+git merge -s ours branch1 branch2 branchN
+git merge -s subtree branchA branchB
+git merge main --no-ff
+git merge main --abort
+git merge main --no-commit
+
+
 
 
 

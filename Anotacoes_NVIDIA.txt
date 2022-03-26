@@ -1,0 +1,19 @@
+lspci | grep -e VGA
+
+sudo add-apt-repository contrib
+sudo apt update
+
+lscpu | grep CPU
+
+sudo apt install linux-headers-amd64
+
+sudo apt install nvidia-detect
+
+recomendado
+sudo apt install nvidia-driver linux-image-amd64
+
+sudo reboot now
+
+Uma vez conectado novamente, execute o “Nvidia-smi” comando para confirmar se os novos drivers da Nvidia foram instalados.
+
+nvidia-smi

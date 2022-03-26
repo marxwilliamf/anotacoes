@@ -31,3 +31,79 @@ GRUB_DEFAULT=2
 
 
 update-grub
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////
+
+sudo apt-get install xen-system-amd64
+
+sudo apt-get --no-install-recommends install xen-tools
+
+
+
+
+
+Introduction to the Xen Hypervisior on Debian
+
+
+
+
+/////////////////////////////////////
+/etc/network/interfaces
+/////////
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+#auto lo
+iface lo inet loopback
+
+allow-hotplug enp2s0
+
+iface enp2s0 inet manual
+
+auto xenbr0
+iface xenbr0 inet dhcp
+    bridge_ports enp2s0
+
+///////////////////
+
+ip addr
+
+
+sudo brctl show
+
+systemctl restart networking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
