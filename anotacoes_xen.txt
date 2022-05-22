@@ -92,7 +92,7 @@ systemctl restart networking
 
 
 
-
+sudo xen-create-image --hostname LinuxDebian --vcpus 8 --pygrub --dist bullseye
 
 
 

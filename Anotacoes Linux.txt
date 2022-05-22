@@ -561,3 +561,56 @@ abcdefghi ->   abc|defghi + Ctrl + K -> abc + Ctrl + A /+/ Ctrl + Y-> abcdefghi 
 
 Ctrl + L // limpa tela mas mantem a linha atual
 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+Drivers de rede
+
+Atmel /			sudo apt install atmel-firmware 
+
+Atheros /		sudo apt install firmware-atheros 
+
+Broadcom /		sudo apt install firmware-b43-installer    
+	     	     ou sudo apt install firmware-b43legacy-installer 
+	     	     ou sudo apt install firmware-brcm80211 
+
+Intel /			sudo apt install firmware-ipw2x00 
+	     	     ou sudo apt install firmware-iwlwifi 
+	     
+Marvell Libertas / 	sudo apt install firmware-libertas 
+
+ou
+
+    sudo apt install libertas-firmware 
+
+Ralink /		sudo apt install firmware-ralink 
+
+Realtek / 		sudo apt install firmware-realtek 
+
+Texas Instruments / 	sudo apt install firmware-ti-connectivity 
+
+Para os chipset: * ZyDAS ZD1211 * ZyDAS ZD1211B * Atheros AR5007UG (alternatively known as AR2524/AR5524)
+			sudo apt install firmware-zd1211 
+
+
+//////////////////////////////////////
+
+/etc/NetworkManager/nm-system-settings.conf
+
+////
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=false 
+////
+
+mudar para
+////
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=true 
+////
+
+
