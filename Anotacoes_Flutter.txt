@@ -5,17 +5,29 @@ sdkmanager --licenses
 
 Windows:
 
-flutter config --android-sdk="$HOME/Android/Sdk"
+
+flutter config --android-sdk="C:\Users\marxw\AppData\Local\Android\Sdk\bin"
 flutter config --android-sdk=C:\Users\User\AppData\Local\Android\Sdk\tools\bin
-flutter config --android-studio-dir=/snap/android-studio/current/android-studio
 flutter config --android-studio-dir=C:\Program Files\Android\Android Studio
 
 C:\src\flutter\bin
 
-
-
-
+ANDROID_HOME=C:\Users\User\AppData\Local\Android\Sdk
+ANDROID_SDK_ROOT=C:\Users\User\AppData\Local\Android\Sdk\tools\bin
+ANDROID_SDK_HOME=C:\Users\User\AppData\Local\Android\Sdk
 
 
 
 flutter config --enable-windows-desktop
+
+
+setar ambiente java
+
+install visual cpp bild tools
+
+
+
+Linux
+
+flutter config --android-sdk="$HOME/Android/Sdk"
+flutter config --android-studio-dir=/snap/android-studio/current/android-studio
