@@ -1,0 +1,208 @@
+WSL 2
+
+https://docs.microsoft.com/pt-br/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+Reinicie o computador
+
+Baixe o pacote de atualização //https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+Definir WSL 2 como padrão
+wsl --set-default-version 2
+
+
+/////////
+Convertendo uma distribuição instalada no WSL 1 para WSL 2
+wsl --set-version <distribution name> 2
+////////
+
+
+Para não acontecer isso:
+
+A todo disco rígido.
+A usar completamente os recursos de processamento.
+A usar 80% da memória RAM disponível.
+A usar 25% da memória disponível para SWAP
+
+crie este arquivo:
+
+////////
+(C:\Users\<seu_usuario>\.wslconfig
+////
+[wsl2]
+memory=8GB
+processors=4
+swap=2GB
+////
+
+wsl --shutdown        //fecha todas as distribuições ativas para ativar modificações
+////////
+
+
+
+
+WSL 
+
+wsl -l -v
+wsl -d debian     /entra na distribuição
+
+
+\\wsl$		//caminho para abrir no Windows Explorer
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Docker
+
+Unisntall old versions
+
+sudo apt-get remove docker docker-engine docker.io containerd runc
+
+
+Set up the repository
+
+sudo apt-get update
+
+ sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  
+
+
+
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+
+Dê permissão para rodar o Docker com seu usuário corrente:
+	sudo usermod -aG docker $USER
+
+
+
+sudo service docker start
+
+
+No Windows 11 é possível:
+	edite /etc/wsl.conf:
+	
+sudo vim /etc/wsl.conf
+////
+[boot]
+command="service docker start" 
+
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+
+Instalando Oh-my-zsh 
+
+
+
+
+//https://dev.to/erickrock80/pt-br-instalando-oh-my-zsh-no-windows-terminal-3a8l
+
+install on vscode Remote - WSL && Remote Development && Remote - Containers && Remote - SSH
+
+
+wsl --set-version <distro name> 2
+wsl --set-version debian 2
+
+
+Tema Sobole
+
+Tema SpaceShip
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ErickRock/oh-my-zsh-on-windows-terminal/master/zsh-install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ErickRock/oh-my-zsh-on-windows-terminal/master/tools-zsh-install.sh)" -y
+
+sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+
+
+
+sudo ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

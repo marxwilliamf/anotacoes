@@ -1,0 +1,74 @@
+Anotacoes_Vim
+
+
+
+inserir um texo tecle i(insert), a(append) ou <insert>
+pressionar <insert> duas vezes, fica REPLACE (substituição)
+sair do modo de inserção basta teclar <ESC> (escape)
+
+
+INÍCIO
+------
+vim <nome do arquivo> - abre o arquivo para edição
+vim                   - abre o editor vazio. Para salvar, digite: :w <nome do arquivo>
+vim arquivo +         - abre com cursor no fim do arquivo
+vim arquivo +10       - abre com cursor na linha 10
+vim arquivo +/linux   - abre com cursor na 1ª ocorrência de "linux"
+
+SAIR SEM SALVAR (QUIT)
+----------------------
+:q  - se o arquivo nao foi alterado
+:q! - não salva as alterações do arquivo (forçado)
+
+SAIR SALVANDO (WRITE)
+---------------------
+:wq!
+ZZ
+
+APAGANDO (RECORTANDO)
+---------------------
+dd  - apaga linha inteira
+5dd - apaga 5 linhas a partir do cursor
+
+DESFAZENDO E REFAZENDO
+----------------------
+u      - desfaz a ultima operação (possui vários níveis)
+U      - reconstruir a linha inteira
+Ctrl+r - refaz uma ação desfeita
+
+COPIANDO (Y) E COLANDO (PASTE)
+------------------------------
+yy  - copia a linha atual
+5yy - copia as próximas 5 linhas
+p   - cola
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Referências: https://gist.github.com/luizsanches/850adc2d62369a1786f6
