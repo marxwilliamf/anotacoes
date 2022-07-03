@@ -1,0 +1,6 @@
+Windows
+
+
+CMD
+
+rmdir "folder" /S /Q

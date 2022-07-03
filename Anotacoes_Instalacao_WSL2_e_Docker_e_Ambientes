@@ -2,15 +2,15 @@ WSL 2
 
 https://docs.microsoft.com/pt-br/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+	dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+	dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-Reinicie o computador
+	Reinicie o computador
 
-Baixe o pacote de atualização //https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+	Baixe o pacote de atualização //https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 Definir WSL 2 como padrão
-wsl --set-default-version 2
+	wsl --set-default-version 2
 
 
 /////////
@@ -33,7 +33,7 @@ crie este arquivo:
 ////
 [wsl2]
 memory=8GB
-processors=4
+processors=7
 swap=2GB
 ////
 
@@ -64,7 +64,7 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 
 Set up the repository
 
-sudo apt-get update
+sudo apt-get update && sudo apt-get upgrade
 
  sudo apt-get install \
     ca-certificates \
@@ -107,7 +107,7 @@ command="service docker start"
 ///////////////////////////////////////////////////////////////////////////////////
 
 
-Instalando Oh-my-zsh 
+Instalando Oh-my-zsh
 
 
 
