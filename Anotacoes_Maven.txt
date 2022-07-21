@@ -4,6 +4,13 @@ Maven
 mvn --version
 
 
+mvnw caso tenha o arquivo mvnw ele pode ser usado quando o maven não estiver instalado na maquina, basta usá-lo na linha de comando.
+./mvnw package
+
+
+./mvnw dependency:tree
+./mvnw dependency:resolve
+
 ################################################
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

@@ -1,3 +1,7 @@
+Listar arquivos commitados em um commit:
+
+git diff-tree --no-commit-id --name-only -r <hash_do_commit>
+
 ##########################
 
 We recommend every repository include a README, LICENSE, and .gitignore.
