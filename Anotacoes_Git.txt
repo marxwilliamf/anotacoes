@@ -1,3 +1,7 @@
+Listar arquivos commitados em um commit:
+
+git diff-tree --no-commit-id --name-only -r <hash_do_commit>
+
 ##########################
 
 We recommend every repository include a README, LICENSE, and .gitignore.
@@ -544,6 +548,30 @@ git merge -s subtree branchA branchB
 git merge main --no-ff
 git merge main --abort
 git merge main --no-commit
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+Juntar Repositorio abc ao xyz
+
+cd xyz
+git remote add abc /path/projeto/abc
+git fetch abc --tags
+git merge --allow-unrelated-histories abc/main
+git remote remove abc
+
+
+////////////////
+
+
+cd pasta_projeto
+git remote add TesteAdmissionalPraticoUbots ../eclipse-workspace/TesteAdmissionalPraticoUbots
+git fetch TesteAdmissionalPraticoUbots
+git merge --allow-unrelated-histories TesteAdmissionalPraticoUbots/master
+
 
 
 
