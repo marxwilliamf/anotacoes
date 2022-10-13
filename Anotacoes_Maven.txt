@@ -3,6 +3,8 @@ Maven
 
 mvn --version
 
+mvn spring-boot:run
+
 
 ################################################
 
