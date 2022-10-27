@@ -12,6 +12,7 @@ mvnw caso tenha o arquivo mvnw ele pode ser usado quando o maven não estiver in
 
 ./mvnw dependency:tree
 ./mvnw dependency:resolve
+./mvnw help:effective-pom
 
 ################################################
 
