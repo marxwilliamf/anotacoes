@@ -64,6 +64,7 @@ git reset HEAD --hard			//ainda não fez commit da alteração quer retornar par
 
 git reset HEAD^ --hard    		//retorna para último commit após um commit já efetuado
 
+git reset 5faab146c //apaga todos os commits depois desse e deixa o projeto como estava antes do comando, sem alterar nada.
 
 git log --graph --oneline --all  // todos os ramos
 git log -2 //mostra os dois ultimos commits "-n" últimos "n" commits
@@ -150,6 +151,12 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	Anotacoes_Diversas.txt	
 	
+remover arquivos staged, para não ir para o commit
+	use "git restore --staged <file>..." to unstage
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
 ///
 	
 git status
@@ -578,8 +585,35 @@ git merge --allow-unrelated-histories TesteAdmissionalPraticoUbots/master
 
 
 
+AutoCRLF
 
+How to fix
 
+The default value for core.autocrlf is selected during Git installation and stored in system-wide gitconfig 
+(%ProgramFiles(x86)%\git\etc\gitconfig on Windows, /etc/gitconfig on Linux). 
+Also there're (cascading in the following order):
 
+"global" (per-user) gitconfig located at ~/.gitconfig, yet another
+"global" (per-user) gitconfig at $XDG_CONFIG_HOME/git/config or $HOME/.config/git/config and
+"local" (per-repo) gitconfig at .git/config in the working directory.
+
+autocrlf = true if you have unix-style lf in one of your files (= RARELY),
+autocrlf = input if you have win-style crlf in one of your files (= almost ALWAYS),
+autocrlf = false – NEVER!
+
+ – git config --system core.autocrlf false            # per-system solution
+ – git config --global core.autocrlf false            # per-user solution
+ – git config --local core.autocrlf false              # per-project solution
+
+The warning "CRLF will be replaced by LF" says that you (having autocrlf=input) will lose your windows-style CRLF 
+after a commit-checkout cycle (it will be replaced by unix-style LF). Don't use input under Windows.
+
+1) true:                x -> LF -> CRLF
+2) input:               x -> LF -> LF
+3) false:               x -> x -> x
+	-> file to commit -> repository -> checked out file
+	
+git config --global core.autocrlf true
+git config --system core.autocrlf true
 
 
