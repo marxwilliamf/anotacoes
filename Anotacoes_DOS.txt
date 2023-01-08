@@ -4,3 +4,7 @@ Windows
 CMD
 
 rmdir "folder" /S /Q
+
+
+
+echo %path%

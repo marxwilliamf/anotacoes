@@ -1,0 +1,4 @@
+Anotações PowerShell
+
+clear  //limpar
+$Env:Path //Mostrar PATH

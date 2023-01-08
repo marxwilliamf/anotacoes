@@ -331,12 +331,13 @@ git switch -c novo-ramo-correcoes-v1.0					// para poder fazer commits posterior
 git add novo_arquivo.java
 git commit -m "Atualizando"
 gir checkout master
+gtt checkout -  //volta ao branch anterior
 git rebase novo-ramo-correcoes-v1.0 | git merge	novo-ramo-correcoes-v1.0
 git tag v1.1
 git push origin v1.1
 
 
-
+git cherry-pick <hash> 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 git push --force -u origin master
 git reset --hard HEAD									//ainda não fez commit da alteração quer retornar para o ultimo commit
@@ -347,13 +348,14 @@ git revert HEAD										//voltando para o commit anterior pode trocar o HEAD pe
 git revert 9cf2ff3 	// volta para o estado do commit indicado criando para isso um novo commit, preservando o commit que foi retrocedido no historico de logs para possíveis usos 
  
 git add <file>
+git add -p  //iterativo para separar alterações em commits diferentes
 git reset <file>
 
 git rm --cached <added_file_to_undo>
 
 //atualiza o ultimo commit
 git commit --amend -m "atualizando ultimo commit" //nesse caso pode-se fazer uma operação como add e então fazer um amend
-
+git commit --amend --no-edit // Não altera a mensagem
 
  no ramos master -> git merge teste
  pode dar conflite mas abriu o processo para parar tem que dar uum git merge --abort
@@ -584,6 +586,7 @@ git fetch TesteAdmissionalPraticoUbots
 git merge --allow-unrelated-histories TesteAdmissionalPraticoUbots/master
 
 
+/////////////////////
 
 AutoCRLF
 
@@ -703,3 +706,57 @@ Windows Registry Editor Version 5.00
 ; LGRAY WHITE
 "ColorTable07"=dword:00c0c0c0
 "ColorTable15"=dword:00ffffff
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+Atualizando Branches
+
+
+Crie outro branch a partir do MASTER atualizado;
+Faça o git merge com o teu branch que quer continuar;
+Assim, você vê se há algum conflito, verifica o código com as mudanças e tem um branch atualizado.
+
+Primeiro, salva sua branch (em caso de qualquer problema) durante o seguinte:
+git branch <branch_save> <branch>
+Tenta trocar de rais da branch:
+
+git rebase master <branch>
+# OU
+# Se você quiser trocar ordem dos commits ou apagar alguns:
+git rebase -i master <branch>
+
+O rais da branch sera master. Se tem conflitos, resolva-os e rebase --continue.
+
+No fim, tera seu trabalho atualizado com master: a rais da branch sera master e o trabalho sera adaptado.
+
+Para restaurar a situação initial em caso de problema:
+
+git rebase --abort # Se rebase em curso
+git checkout <branch>
+git reset --hard <branch_save>
+
+Se você está satisfeito do resultado: apaga a salvaguarda:
+
+git branch -D <branch_save>
+
+///////////////////////////////////////////////////////////////////////////
+
+Criar branch apartir de outro
+
+git checkout -b feature4 develop // branch feature4 apartir de develop
+
+///////////////////
+
+
+
+
+
+
+
+
