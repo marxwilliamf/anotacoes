@@ -5,6 +5,27 @@ CMD
 
 rmdir "folder" /S /Q
 
+set SERVER_PORT=8085  //Setando variável de ambiente
+echo %SERVER_PORT%    //mostrando variável
 
 
 echo %path%
+
+
+##########################################################################################
+
+tree [<drive>:][<path>] [/f] [/a]
+
+<drive>:	Specifies the drive that contains the disk for which you want to display the directory structure.
+<path>	Specifies the directory for which you want to display the directory structure.
+/f	Displays the names of the files in each directory.
+/a	Specifies to use text characters instead of graphic characters to show the lines that link subdirectories.
+/?	Displays help at the command prompt.
+
+
+tree pasta /f /a  //mostra arvore de diretório
+tree \
+tree c:\ /f | more
+##########################################################################################
+
+

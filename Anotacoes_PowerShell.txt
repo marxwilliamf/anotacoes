@@ -1,4 +1,14 @@
 Anotações PowerShell
 
 clear  //limpar
+
+
+$Env:<variable-name> = "<new-value>"  //criar e editar variáveis de ambiente
+$Env:SERVER_PORT=8083
+
+
+[Environment]::SetEnvironmentVariable('SERVER_PORT','')  //removendo
+[Environment]::GetEnvironmentVariable('SERVER_PORT')
+
+
 $Env:Path //Mostrar PATH

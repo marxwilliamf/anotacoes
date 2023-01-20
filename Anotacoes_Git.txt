@@ -14,6 +14,7 @@ git push -u origin master
 
 ///////////////////////
 git pull <remote> <branch>
+git pull --all
 git branch --set-upstream-to=origin/<branch> main
 ///////////////////////
 
@@ -51,6 +52,8 @@ git branch ramo2git
 git log | git log --oneline | git log --graph | git log --graph --oneline
 git graph --oneline
 
+
+git checkout <branch>  //volta para o último commit do branch em específico
 git checkout -b teste // cria um novo branch
 git checkout master // retorna ao ramo master no HEAD do master
 git checkout anotacoes.txt		//volta o arquivo para o estado do ultimo commit
@@ -123,6 +126,8 @@ Date:   Fri Nov 26 05:49:12 2021 -0300
 Renomeando arquivo do projeto pelo Git mv serve para arquivos e diretórios
 
 git mv Anotacoes_docker.txt Anotacoes_Docker.txt
+git mv <nome_atual> <novo_nome>
+
 git commit -m "Renomeado arquivo Docker;" // no caso não fiz esse commit mas seria asssim
 
 /////////////////////
