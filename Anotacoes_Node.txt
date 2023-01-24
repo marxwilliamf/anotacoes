@@ -1,0 +1,41 @@
+npm install <Module Name>
+
+npm install express
+
+var express = require('express');
+
+npm install express -g //global
+npm uninstall express
+
+npm ls
+
+npm update express
+
+npm search express //search a package using NPM
+
+
+npm ls -g
+
+
+You will need to provide all the required information about your module. You can take help from the above-mentioned package.json file to understand 
+the meanings of various information demanded. Once package.json is generated, use the following command to register yourself with NPM repository 
+site using a valid email address.
+
+$ npm adduser
+Username: mcmohd
+Password:
+Email: (this IS public) mcmohd@gmail.com
+
+It is time now to publish your module −
+
+$ npm publish
+
+
+
+npm install express --save
+
+npm install body-parser --save
+npm install cookie-parser --save
+npm install multer --save
+
+
