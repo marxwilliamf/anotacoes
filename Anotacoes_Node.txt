@@ -39,3 +39,36 @@ npm install cookie-parser --save
 npm install multer --save
 
 
+
+
+
+
+
+
+
+
+
+
+
+npm install express typeorm
+
+npm install mysql2
+
+npm install -g ts-node // ou // npm install --save-dev ts-node
+
+npm start
+
+npm install -g typescript // ou //npm install --save-dev typescript
+
+
+
+npm i --save-dev @types/node
+
+npm run build
+
+
+npm cache verify
+npm cache clean --force
+npm i -D @types/tls
+
+tsc --watch // fará com que o TypeScript fique vigiando os arquivos e recompile automaticamente sempre que algum arquivo for salvo.

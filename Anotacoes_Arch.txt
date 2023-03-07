@@ -1,0 +1,2 @@
+sudo pacman -sS java | grep jre
+sudo pacman -S jre-openjdk
