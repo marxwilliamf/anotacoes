@@ -1,15 +1,152 @@
 docker run hello-world
 
+/////////////////////////////////////////
+#specify a Base Image
+
+FROM ubuntu:latest //specify Docker Image Name and start the build process
+
+MAINTAINER marxwilliamf@gmail.com
+MAINTAINER support@fosstechnix.com
 
 
+CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
+CMD /bin/bash
+
+///
+
+FROM ubuntu:latest
+MAINTAINER support@fosstechnix.com
+RUN apt-get update
+RUN apt-get install -y apache2
+
+COPY test.sh .
+RUN ./test.sh
+#OR
+RUN /path/to/test.sh
+
+FROM ubuntu:latest
+LABEL "author"="FOSS TechNIx"
+LABEL "Date"="2020-09-29"
 
 
+EXPOSE 80  //# To Expose port 80 of Docker container
+EXPOSE 8080/tcp
+
+///
+
+FROM node:12
+ENV workdirectory /usr/node  //used to set Environment Variables with key and value
 
 
+//Copies a file and directory from your host to Docker image, however can also fetch remote URLs, extract TAR/ZIP files,
+//etc. It is used downloading remote resources, extracting TAR/ZIP files.
+
+ADD <source>... <destination>
+ADD java/jdk-8u231-linux-x64.tar /opt/jdk/
+ADD https://fosstechnix.com/test.tar.xz /home/ubuntu/test/
 
 
+//COPY in Dockerfile Instruction used to Copies a file or directory from your host to Docker image, It is used to simply //copying files or directories into the build context.
+
+COPY <source>... <destination>
+
+# To Install All dependencies for Node.js App
+
+COPY package*.json ./
+RUN npm install 
+
+# To copy all application packages 
+COPY . .
+
+///
+Example 2:
+
+COPY index.html /var/www/html
+
+///
+
+//ENTRYPOINT in Dockerfile Instruction is used you to configure a container that you can run as an executable.
+//ENTRYPOINT specifies a commands that will executes when the Docker container starts.
+
+FROM ubuntu:latest
+ENTRYPOINT ["ls"]
 
 
+//VOLUME in Dockerfile Instruction is used to create or mount volume to docker container.
+
+FROM node:12
+RUN mkdir /node
+WORKDIR /node
+RUN echo "Welcome to Node.js" > node
+VOLUME /node
+
+
+//USER in Dockerfile Instruction is used to set the user name and UID when running container
+
+USER admin
+
+#To create new user in Dockerfile and login to user.
+RUN adduser -D admin
+USER admin
+
+//WORKDIR in Dockerfile Instruction is used to set the working directory.
+
+WORKDIR /nodejsapp //To Create nodejsapp directory
+
+
+//ARG in Dockerfile Instruction is used to set Environment variables with key and value during the image build .
+
+
+ARG é usado para definir variáveis que podem ser passadas ao construir uma imagem usando o comando docker build. x
+
+ENV é usado para definir variáveis de ambiente que estarão disponíveis quando um contêiner for executado a partir da imagem. 
+As variáveis definidas com o comando ENV são persistentes e estarão disponíveis quando o contêiner for executado
+
+
+//JAVA_PATH estará disponível durante a construção da imagem, mas não estará disponível quando o contêiner for executado
+ARG JAVA_PATH=/opt/jdk/jdk1.8.0_251 
+ENV JAVA_HOME ${JAVA_PATH}
+
+//ONBUILD in Dockerfile Instruction is used to specify command that runs when the image in Dockerfile is 
+//used as base image for another image
+
+FROM node:12
+RUN mkdir -p /usr/node/app
+WORKDIR /usr/node/app
+ONBUILD COPY package.json /usr/node/app/
+ONBUILD RUN npm install
+ONBUILD COPY . /usr/node/app
+CMD [ "npm", "start" ]
+
+///
+
+STOPSIGNAL SIGQUIT //STOPSIGNAL in Dockerfile Instruction is used to set the system call signal that will be sent to the container to exit
+
+
+SHELL ["/bin/bash", "-c", "echo hello"] //used to set the default shell.
+
+
+//HEALTHCHECK in Dockerfile Instruction is used to Check container health by running a command inside the container
+
+
+FROM ubuntu:latest
+HEALTHCHECK --interval=60s --timeout=5s \
+  CMD curl -f http://fosstechnix.info/ || exit 1
+EXPOSE 80
+
+
+//
+
+//.dockerignore in Dockerfile Instruction is used to prevent copy local modules and other unwanted file being copied into Docker Image.
+//Create a .dockerignore in same directory and you can add unwanted modules/files into it.
+
+sudo nano .dockerignore
+
+*.yaml
+__pycache__/
+.git
+.aws
+.env
 
 
 
@@ -77,4 +214,29 @@ sudo docker network ls|inspect|create|rm
 
 
 docker container run --name webhost -d --network my_custom_net
+
+###################################################################################################
+
+docker search ubuntu
+
+docker search --filter "is-official=true" --filter "name=ubuntu" --format "{{.Name}}: {{.Tag}}" | grep '20.04'
+
+docker images
+docker image ls
+docker ps
+docker ps -a
+docker ps --filter "status=running"
+docker ps --format "{{.ID}}\t{{.Names}}"
+docker container ls -a
+docker container  ls --help
+
+docker rmi <ID_da_imagem>
+docker rmi ubuntu:20.04
+
+
+git clone https://github.com/docker/getting-started.git
+
+
+
+
 

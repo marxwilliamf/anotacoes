@@ -1,0 +1,74 @@
+Dependencies
+
+modprobe kvm //precisa estar rodando automaticamente, caso não esteja execute este comando.
+
+modprobe kvm_intel
+ou
+modprobe kvm_amd
+
+kvm-ok  //diagnostico
+
+lsmod |grep kvm
+
+
+ls -al /dev/kvm  //check ownership
+
+sudo usermod -aG kvm $USER //add your user to kvm group
+
+
+///////////////////////////////
+sudo apt remove docker-desktop
+
+rm -r $HOME/.docker/desktop
+sudo rm /usr/local/bin/com.docker.cli
+sudo apt purge docker-desktop
+
+sudo apt install gnome-terminal
+
+sudo apt-get update
+sudo apt-get install ./docker-desktop-<version>-<arch>.deb
+
+
+systemctl --user start docker-desktop
+
+
+/////////////////////////////////////////////////////////
+
+sudo groupadd docker
+
+newgrp docker
+
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
+
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+
+
+//To stop this behavior, use disable instead.
+sudo systemctl disable docker.service
+sudo systemctl disable containerd.service
+
+docker ps
+docker pull
+docker run
+docker start
+docker stop
+docker exec -it
+docker logs
+
+docker pull redis
+
+
+
+
+
+
+
+
+
+
+
+
+
+

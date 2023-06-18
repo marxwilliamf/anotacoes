@@ -18,7 +18,3 @@ $Env:Path //Mostrar PATH
 Test-NetConnection -ComputerName <IP address or hostname> -Port <port number>
 Test-NetConnection -ComputerName 127.0.0.1 -Port 36
 
-
-
-
-

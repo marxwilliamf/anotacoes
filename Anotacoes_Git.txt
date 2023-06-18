@@ -15,7 +15,8 @@ git push -u origin master
 ///////////////////////
 git pull <remote> <branch>
 git pull --all
-git branch --set-upstream-to=origin/<branch> main
+git branch --set-upstream-to=origin/<branch> main   //<branch> branch remoto que deseja rastrear 
+git branch --set-upstream-to=origin/main main
 ///////////////////////
 
 …or push an existing repository from the command line
@@ -39,7 +40,7 @@ git config --global init.defaultBranch master
 git config core.pager cat // mostra todos os logs de uma vez;
 git config core.pager less // mostra só o que cabe na tela mostrando o : que é igual a continua "..." 
 
-git config credential.helper store
+git config --global credential.helper store
 git config --global --unset credential.helper
 
 touch texto.txt
@@ -148,7 +149,7 @@ Changes to be committed:
 
 Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
+  (use "git restore <file>..." to discard changes in working directory) //descarta modificações ainda não commitadas
 	modified:   Anotacoes_Git.txt
 	deleted:    anotacoes_diversas.txt						//arquivo renomeado aparece como deletado
 
@@ -454,7 +455,7 @@ Change directory into the local clone of your repository (if you're not already 
 git remote set-url origin git@github.com:username/your-repository.git
 Now try editing a file (try the README) and then do:
 
-git add -A
+git add -A //adiciona todos os arquivos presentes na pasta do repositório para commit
 git commit -am "Update README.md"
 git push
 You should not be asked for a username or password. If it works, your SSH key is correctly configured.
