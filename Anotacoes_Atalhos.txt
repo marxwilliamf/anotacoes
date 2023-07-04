@@ -1,0 +1,7 @@
+
+#######################################
+###	  Atalhos e Recursos Diversos   ###
+#######################################
+
+Eclipse:
+	Ctrl+Shift+t => Search type

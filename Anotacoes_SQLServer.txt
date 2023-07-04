@@ -1,0 +1,35 @@
+Controle de Acesso:
+	Controle de Acesso Discricionário (DAC)
+		- proprietário atribui direitos de acesso com base em regras especificadas pelo usuáriousuário. Trata-se de um dos
+		modelos mais antigos e menos usado nos últimos tempos.
+
+	Controle de Acesso Obrigatório (MAC)
+		desenvolvido usando um modelo não discricionário, onde as pessoas têm acesso com base em uma liberação de informações. 
+		Essa é uma política na qual os direitos de acesso são atribuídos com base nos regulamentos da autoridade central.
+	
+	Role-Based Access Control (RBAC)
+		RBAC concede acesso com base na função de um usuário e implementa princípios de segurança importantes, como
+		privilégio mínimo e separação de privilégio. 
+		Assim, alguém que tenta acessar informações só pode acessar os dados necessários para sua função. 
+	
+	Attributed Based Access Control (ABAC) - mais recente;
+
+
+
+
+
+DBA
+
+
+
+
+
+
+
+
+
+Acesso remoto
+
+https://learn.microsoft.com/pt-br/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access?view=sql-server-ver16
+
+
