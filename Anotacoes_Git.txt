@@ -290,9 +290,10 @@ git checkout master		// volta pra master antes de fazer merge
 git merge funcionalidadeB
 git rebase funcionalidadeB
 
-
+git stash //usado para remover temporariamente mudanças não comitadas
 git checkout -b funcionalidadeC	// cria um branch novo e já entra nele de uma só vez
 
+git branch -m <new-name> //renomeia o branch
 
 Deletando branches
 

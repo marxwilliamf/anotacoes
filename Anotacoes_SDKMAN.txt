@@ -1,0 +1,24 @@
+
+#### WINDOWS ####
+
+install chocolatey
+choco install unzip
+choco install zip
+
+git bash
+
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+
+
+
+sdk list java
+
+sdkman install java <version>
+
+sdk use java <version> //para sessão atual
+
+sdk config global java <version>
+
+sdk uninstall java <version>

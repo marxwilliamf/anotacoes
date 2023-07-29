@@ -1,3 +1,15 @@
+Brasão java: https://www.oracle.com/a/tech/img/rc10-java-badge-3.png
+
+
+
+
+Javac Classe.java 		// = Javac -cp . Classe.java  //cp classpath e . diretório atual
+java Classe
+
+
+
+
+
 java -jar jarFileName.jar
 
 
@@ -247,7 +259,13 @@ private static void readFile(String fileName) {
 
 
 
+//o seguinte código usa a reflexão para obter a lista de métodos de uma classe:
 
+Class clazz = Class.forName("com.example.MyClass");
+Method[] methods = clazz.getMethods();
+for (Method method : methods) {
+  System.out.println(method.getName());
+}
 
 
 

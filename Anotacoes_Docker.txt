@@ -1,5 +1,16 @@
 docker run hello-world
 
+Docker create
+docker run 
+docker pause
+docker unpause
+docker stop 
+docker start 
+	
+docker attach 
+docker wait 
+docker rm 
+docker kill
 /////////////////////////////////////////
 #specify a Base Image
 
@@ -232,6 +243,10 @@ docker container  ls --help
 
 docker rmi <ID_da_imagem>
 docker rmi ubuntu:20.04
+
+docker run -it --name meu-container ubuntu:latest
+
+docker start meu-container
 
 
 git clone https://github.com/docker/getting-started.git

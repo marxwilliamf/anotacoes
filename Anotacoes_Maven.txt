@@ -145,3 +145,9 @@ mvn site
 
 This phase generates a site based upon information on the project's pom. You can look at the documentation generated under target/site.
 
+
+
+
+
+mvn -Dmaven.test.skip=true package
+mvn -DskipTests package
