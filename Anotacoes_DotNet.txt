@@ -1,0 +1,21 @@
+
+
+
+
+
+dotnet --info
+dotnet --list-sdks
+
+
+
+dotnet new globaljson --sdk-version 6.0.100 --force //--force caso já exista e queira sobrescrever
+
+dotnet new webapi -n ProEventos.API
+
+
+
+dotnet new gitignore
+
+
+
+

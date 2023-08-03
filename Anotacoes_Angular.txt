@@ -2,6 +2,9 @@
 
 npm install -g @angular/cli
 
+npm install -g @angular/cli@12
+
+
 
 ng new project-name
 

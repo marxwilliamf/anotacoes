@@ -536,7 +536,8 @@ Adicionando Repositório
 		git init 	//inicializa o repositorio na pasta local com os códigos
 		
 		git remote add origin https://github.com/MarxWilliam/wfm-algafood-api.git
-
+		git remote -v
+		
 		faz um primeiro commit
 
 		git push -u origin master

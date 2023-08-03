@@ -18,3 +18,12 @@ $Env:Path //Mostrar PATH
 Test-NetConnection -ComputerName <IP address or hostname> -Port <port number>
 Test-NetConnection -ComputerName 127.0.0.1 -Port 36
 
+
+
+Windows 11 - Virtualbox Bidirecional
+    gpedit.msc - Editor de políticas de grupo
+        Configurações do Computador
+            Modelos Administrativos
+                Componentes do Windows
+                    Serviços da Área de Trabalho Remota
+                        Redirecionamento de Dispositivo e Recurso

@@ -5,3 +5,14 @@ InteliJ
 	Plugins
 		JPA
 			JPA Buddy
+
+
+
+STS
+	ctrl + O: mostra os métods da classe
+	Ctrl + Shift + T: Abre janela de Open Type
+
+
+https://www.baeldung.com/curl-rest
+
+https://github.com/eugenp/tutorials
