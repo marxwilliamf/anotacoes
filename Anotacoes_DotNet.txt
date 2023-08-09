@@ -6,16 +6,23 @@
 dotnet --info
 dotnet --list-sdks
 
+dotnet tool list --global
 
+dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-ef --version 5.0.2
 
 dotnet new globaljson --sdk-version 6.0.100 --force //--force caso já exista e queira sobrescrever
 
 dotnet new webapi -n ProEventos.API
 
 
+dotnet ef migrations list
+dotnet ef migrations add Initial -o Data\Migrations
+dotnet ef database update
+
 
 dotnet new gitignore
 
 
-
+dotnet watch run  //rodar o projeto
 

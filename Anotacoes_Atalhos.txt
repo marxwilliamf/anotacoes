@@ -3,5 +3,19 @@
 ###	  Atalhos e Recursos Diversos   ###
 #######################################
 
-Eclipse:
-	Ctrl+Shift+t => Search type
+Eclipse e STS:
+
+	Ctrl + Shift + T:  Search type => Abre janela de Open Type
+	ctrl + O: mostra os métods da classe
+
+
+
+Vs Code 
+
+	Ctrl + Shift + P
+	Ctrl + . : Adiciona using
+	ctrl + , : Settings
+
+	ctor   //Cria Construtor
+
+	

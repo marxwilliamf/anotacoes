@@ -27,7 +27,7 @@ git push -u origin master
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 
 git config --global user.name "William Felipe Marx"
-git config --global user.email "marxwilliamf@gmail.com"
+git config --global user.email "marxwilliamf@gmail.com"     //se não tem espaço não precisa aspas
 
 path global config on linux /home/user/.gitconfig
 path para commits no github https://github.com/MarxWilliam/anotacoes/commits
@@ -48,6 +48,9 @@ git init
 git status
 git add *
 git add . // adiciona todos os arquivos do projeto.
+git restore file.txt //unstage e volta ao estado antes do stage até o ultimo add //modified->umodifiable
+git restore --staged file.txt //somente tira do staged sem fazer alterações //staged ->modified
+
 git commit -a -m "Especificação do Commit"
 git branch ramo2git
 git log | git log --oneline | git log --graph | git log --graph --oneline
