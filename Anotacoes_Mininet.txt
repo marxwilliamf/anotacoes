@@ -1,0 +1,6 @@
+user: mininet
+password: mininet
+
+sudo dhcliente eth1  //caso não tenha ip nesse interface
+
+sudo mn --top=singlke,4

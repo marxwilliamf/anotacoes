@@ -6,10 +6,14 @@ sdkmanager --licenses
 Windows:
 
 
-flutter config --android-sdk="C:\Users\marxw\AppData\Local\Android\Sdk\bin"
+//flutter config --android-sdk="C:\Users\marxw\AppData\Local\Android\Sdk\bin"
+flutter config --android-sdk="C:\Users\marxw\AppData\Local\Android\Sdk"
+flutter config --android-sdk="C:\Users\marxw\AppData\Local\Android\Sdk\tools\bin"
 flutter config --android-sdk=C:\Users\User\AppData\Local\Android\Sdk\tools\bin
-flutter config --android-studio-dir=C:\Program Files\Android\Android Studio
+flutter config --android-studio-dir="C:\Program Files\Android\Android Studio"
 
+/.../AppData\Local\Android\Sdk\tools\bin> ./sdkmanager.bat --licenses
+flutter doctor --android-licenses
 C:\src\flutter\bin
 
 ANDROID_HOME=C:\Users\User\AppData\Local\Android\Sdk

@@ -8,6 +8,9 @@ dotnet --list-sdks
 
 dotnet tool list --global
 
+//./dotnet-install.ps1 -Runtime dotnet -Version 6.0.0
+winget install Microsoft.DotNet.SDK.6
+
 dotnet tool install --global dotnet-ef
 dotnet tool install --global dotnet-ef --version 5.0.2
 

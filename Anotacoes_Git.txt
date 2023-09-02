@@ -404,7 +404,8 @@ git commit -m "Corrigido erro tal. Closes #1"
 
 git config --help
 
-git config --global core.editor gedit
+git config --global core.editor gedit ////nível de usuário
+git config --system core.editor vim  //nível de sistema
 git config --global user.name "William Marx"
 git config --global user.email "marxwilliamf@gmail.com"
 

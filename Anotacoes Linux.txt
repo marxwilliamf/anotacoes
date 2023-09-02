@@ -1,4 +1,10 @@
 
+EFI
+
+/boot/efi     //tipo fat32 500MB //No Ubuntu escoler Tipode Partição EFI que ele configura automático
+
+//////////////////////////////
+
 Como adicionar o Windows 10 ao menu de boot no Grub
 Tipo de notícia: Desenvolvimento
 
