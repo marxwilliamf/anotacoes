@@ -407,8 +407,10 @@ git config --help
 git config --global core.editor gedit ////nível de usuário
 git config --system core.editor vim  //nível de sistema
 git config --global user.name "William Marx"
+git config user.name  //mostra o nome que está configurado
+git config --global user.name
 git config --global user.email "marxwilliamf@gmail.com"
-
+git config --global user.email ////mostra o email que está configurado
 ##################################################################################
 
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
