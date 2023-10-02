@@ -1,0 +1,42 @@
+Shift + F4: Retorna Zoom padrão tela inicialdo documento;
+Z: Zoom;
+H: Hand;
+Espaço: Alterna entre o útimo documento;
+
+Ordem dos objetos nas camadas são dadas por ordem de criação;
+
+Objetos:
+    Manter Proporção ao criar objeto: Ctrl;
+    Reduzir objeto mantendo o centro: Manter Shift apertado;
+
+
+Reguas:
+    Exibir/Reguas: Alt + Shift + R;
+
+Tab: troca de campos;
+
+Cor:
+    Mudar Cor:
+        Interior do objeto: Selecionar objeto, clicar com o botão esquerdo sobre a cor escolhida na paleta de cores;
+        Contorno: Selecionar objeto, clicar com o botão direiro sobre a cor escolhida na paleta de cores;
+    Mais opções sobre determinada cor: clica sobre a cor principal e segura até aparecer uma paleta só daquela cor, solta o botão do mouse e clica sobre a cor escolhida; 
+    Paleta de cores recentes: temporária, desde a aberura do arquivo;
+
+
+Girar e Rotacionar: Clicando duas vezes: abre oção de rotacionar
+
+Mudar eixo de Rotação: Selecionar objeto, clicar e arastar bolinha do meio dele;
+
+Girar Objeto ao redor de outro: Clicar duas vezes sobre o objeto a ser rotacionado e arrastar bolinha do centro do objeto para o centro do 
+outro objeto que vai ficar no centro.
+
+Poligono: 
+    3L: Triangulo;
+    5L Pentágono
+        
+
+Linhas Guias;
+    Diretrizes|Guidelines: Deixar ativado para ver as linhas Guias: Alt + Shift + A;
+
+
+Tamanhos dos objetos, definidos por largura e altura;

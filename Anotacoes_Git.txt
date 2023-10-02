@@ -341,7 +341,7 @@ git switch -c novo-ramo-correcoes-v1.0					// para poder fazer commits posterior
 git add novo_arquivo.java
 git commit -m "Atualizando"
 gir checkout master
-gtt checkout -  //volta ao branch anterior
+git checkout -  //volta ao branch anterior
 git rebase novo-ramo-correcoes-v1.0 | git merge	novo-ramo-correcoes-v1.0
 git tag v1.1
 git push origin v1.1

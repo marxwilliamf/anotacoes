@@ -95,10 +95,17 @@ sudo apt-get update
 Dê permissão para rodar o Docker com seu usuário corrente:
 	sudo usermod -aG docker $USER
 
-
+#####################################################################################
+debian
 
 sudo service docker start
 systemctl start docker
+
+docker info
+
+sudo service docker status
+
+####################################################################################
 
 systemctl unmask docker.service
 systemctl unmask docker.socket
@@ -109,10 +116,16 @@ $ sudo service --status-all
 $ sudo service docker start
 $ sudo service docker start
 
+#####################################################################################
+
+ps -p 1 -o comm=
+//init(Debian) //não funciona systemctl
+
 sudo su
 systemctl start docker
 systemctl enable docker
 systemctl restart docker
+#####################################################################################
 
 Share
 Follow 
@@ -121,7 +134,7 @@ sudo service docker status
 
 sudo docker run hello-world
 
-
+###
 
 No Windows 11 é possível:
 	edite /etc/wsl.conf:

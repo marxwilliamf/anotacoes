@@ -4,3 +4,42 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
+
+Enable Windows Subsystem for linux: dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux]] /all /norestart
+
+Enable Virtual Machine Platform: dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+Download WSL2 kernel: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+Set default WSL verison: wsl --set-default-version 2
+
+
+
+wsl --install
+
+wsl -l -v //ver a versão
+
+wsl --set-default-version <Version#>
+
+
+1) Run PowerShell as administrator
+2) Paste this command:
+  Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+3) Restart your PC
+4) Run PowerShell as administrator again
+5) Paste these two commands:
+  dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+  dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+6) Restart your PC Again
+7) Download the Linux Kernel Update Package from
+  https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+8) Then, run powershell as administrator again and paste this command:
+  wsl --set-default-version 2
+9) Install a distro of your choice from the Microsoft Store (Example Ubuntu, Kali Linux)
+
+OR:
+
+Run this command: wsl --install
+NOTE: To Run this command given above, you must be running 
+Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11.
+Also, running this command installs Ubuntu by default.
