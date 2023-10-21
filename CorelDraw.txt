@@ -9,18 +9,22 @@ Objetos:
     Manter Proporção ao criar objeto: Ctrl;
     Reduzir objeto mantendo o centro: Manter Shift apertado;
 
-
-Reguas:
-    Exibir/Reguas: Alt + Shift + R;
-
-Tab: troca de campos;
-
 Cor:
     Mudar Cor:
         Interior do objeto: Selecionar objeto, clicar com o botão esquerdo sobre a cor escolhida na paleta de cores;
         Contorno: Selecionar objeto, clicar com o botão direiro sobre a cor escolhida na paleta de cores;
     Mais opções sobre determinada cor: clica sobre a cor principal e segura até aparecer uma paleta só daquela cor, solta o botão do mouse e clica sobre a cor escolhida; 
     Paleta de cores recentes: temporária, desde a aberura do arquivo;
+
+
+Contorno:
+    Espessura:
+    Traço ou estilo:
+
+Reguas:
+    Exibir/Reguas: Alt + Shift + R;
+
+Tab: troca de campos;
 
 
 Girar e Rotacionar: Clicando duas vezes: abre oção de rotacionar
@@ -40,3 +44,8 @@ Linhas Guias;
 
 
 Tamanhos dos objetos, definidos por largura e altura;
+
+
+Imagens
+    Importar
+    Exportar

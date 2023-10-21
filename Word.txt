@@ -1,0 +1,230 @@
+
+Word
+
+    Crtl + Z: Voltar
+    Ctrl + R; Refazer
+    Ctrl + T: Selecionar Tudo
+    Crtl + N: Negrito
+    Crtl + I: Itálico
+    Crtl + S: Sublinhado
+    Crtl + Shift + >: Aumentar Fonte
+    Crtl + Shift + <: Diminuir Fonte
+
+Word Online
+
+    Crtl + Alt + N:
+    
+
+Barra de Ferramentas de Acesso Rápido
+    Salvar
+    Desfazer
+    Repetir
+
+Faixa de Opções Extendida
+
+Página Inicial​ 
+    Área de Transferência​ 
+
+        Colar Especial​ 
+
+        Pincel de Formatação​ 
+
+    Fonte​ 
+
+        Maiúsculas Minúsculas 
+
+        Subscrito​ 
+
+        Sobrescrito​ 
+
+        Negrito, Sublinhado Itálico​ 
+
+        Cores​ 
+
+        Cor da Fonte​ 
+
+        Cor de Realce do Texto 
+
+    Parágrafo​ 
+
+        Alinhamento de Texto​ 
+
+        Marcadores​ 
+
+        Lista Numerada​ 
+
+        Espaçamento de linha e Parágrafo​ 
+
+        Ordenar palavras​ 
+
+    Estilos​ 
+
+        Títulos​ 
+
+    Editando​ 
+
+        Localizar​ 
+
+        Substituir​ 
+
+ 
+
+Inserir​ 
+
+    Páginas​ 
+
+        Folha de Rosto​ 
+
+        Página em Branco​ 
+
+        Quebra de Página​ 
+
+    Tabela​ 
+
+    Tabela Simples​ 
+
+        Tabela Excel​ 
+
+        Desenhar tabela​ 
+
+        Tabelas Rápidas​ 
+
+    Ilustrações​ 
+
+        Imagem​ 
+
+        Formas​ 
+
+        Smart Art​ 
+
+        Formas​ 
+
+        Gráfico ​ 
+
+    Cabeçalho​ 
+
+        Rodapé​ 
+
+ 
+
+    Formato de Imagem 
+
+        Ajustar​ 
+
+            Cor​ 
+
+            Efeitos Artísticos​ 
+
+        Estilos da Imagem​ 
+
+            Borda de Imagem​ 
+
+            Efeitos de ImAgem​ 
+
+        Organizar​ 
+
+            Posição​ 
+
+            Quebra de Texto Automática​ 
+
+ 
+
+    Design​ 
+
+ 
+
+        Formatação do Documento​ 
+
+            Temas​ 
+
+        Plano de Fundo da Página​ 
+
+            Marca D’água​ 
+
+            Cor da página​ 
+
+            Bordas da página ​ 
+
+    
+
+        Layout​ 
+
+            Configurar Página​ 
+
+                Margens​ 
+
+                Orientação​ 
+
+                Tamanho​ 
+
+                Colunas​ 
+
+                Quebra de Página
+                
+            Parágrafo​ 
+
+                Recuar​ 
+
+                Espaçamento​
+ 
+
+    Referências​ 
+
+        Sumário​ 
+
+            Sumário​ 
+
+            Atualizar Sumário​ 
+
+        Nota de Rodapé​ 
+
+            Inserir Nota de Rodapé​ 
+
+            Mostrar Notas​ 
+
+            Legendas​ 
+
+                Inserir Legendas​ 
+
+                Inserir Índice Ilustrações​ 
+
+​     Revisão​ 
+
+        Revisão de Texto​ 
+
+            Ortografia​ 
+
+            Dicionário de Sinônimos​ 
+
+            Contagem de Palavras​ 
+
+    Comentários​ 
+
+        Mostrar Comentários​ 
+
+​ 
+Exibir 
+
+    Modo de Exibição​ 
+
+        Modo de Leitura​ 
+
+        Layout de Impressão​ 
+
+    Mostrar​ 
+
+        Réguas​ 
+
+        Linhas de Grade​ 
+
+        Painel de Navegação​ 
+
+    Zoom​ 
+
+        Uma página​ 
+
+        Várias páginas​ 
+
+        Largura da Página​ 
+
+ 
