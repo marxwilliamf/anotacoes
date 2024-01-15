@@ -1,0 +1,528 @@
+
+Word
+
+    Crtl + Z: Voltar
+    Ctrl + R; Refazer
+    Ctrl + T: Selecionar Tudo
+    Crtl + N: Negrito
+    Crtl + I: Itálico
+    Crtl + S: Sublinhado
+    Crtl + Shift + >: Aumentar Fonte
+    Crtl + Shift + <: Diminuir Fonte
+
+Word Online
+
+    Crtl + Alt + N:
+    
+
+
+
+Requisitos:
+
+Saber mudar de Exebição em Modo Impressão, para Modo Leitura, Layout da Web;
+
+Aplicar Negrito Itálico, Sublinhado, e Super e Subescrito;
+
+Salvar, Salvar Como e Abrir
+
+Corretor Orográfico, Sinônimos;
+
+Inserir Colunas em Layout;
+
+Mudar Tamanho da página, orientação e páginas
+
+
+Necessario saber inserir imagem pelo menu inserir , também copiar e colar tanto do navegador quanto do arquivo;
+
+Inserir Tabelas, Gráficos.
+
+Inserir formas, SmartArt
+
+Letra Capitular
+
+Capa, Folha de Rosto, Sumário e Referências​
+
+Cabeçalho, Rodapé, e Numeração de Página //Jornal, revista ou trabalho acadêmico;
+
+Utilizar Símbolos, Equações
+
+Mala Direita
+
+
+
+
+Noções de como Imprimir
+
+Barra de Ferramentas de Acesso Rápido
+    Salvar
+    Desfazer
+    Repetir
+
+Faixa de Opções Extendida
+
+Página Inicial​ 
+    Área de Transferência​ 
+
+        Colar Especial​ 
+
+        Pincel de Formatação​ 
+
+    Fonte​ 
+
+        Maiúsculas Minúsculas 
+
+        Subscrito​ 
+
+        Sobrescrito​ 
+
+        Negrito, Sublinhado Itálico​ 
+
+        Cores​ 
+
+        Cor da Fonte​ 
+
+        Cor de Realce do Texto 
+
+    Parágrafo​ 
+
+        Alinhamento de Texto​ 
+
+        Marcadores​ 
+
+        Lista Numerada​ 
+
+        Espaçamento de linha e Parágrafo​ 
+
+        Ordenar palavras​ 
+
+    Estilos​ 
+
+        Títulos​ 
+
+    Editando​ 
+
+        Localizar​ 
+
+        Substituir​ 
+
+ 
+
+Inserir​ 
+
+    Páginas​ 
+
+        Folha de Rosto​ 
+
+        Página em Branco​ 
+
+        Quebra de Página​ 
+
+    Tabela​ 
+
+    Tabela Simples​ 
+
+        Tabela Excel​ 
+
+        Desenhar tabela​ 
+
+        Tabelas Rápidas​ 
+
+    Ilustrações​ 
+
+        Imagem​ 
+
+        Formas​ 
+
+        Smart Art​ 
+
+        Formas​ 
+
+        Gráfico ​ 
+
+    Cabeçalho​ 
+
+        Rodapé​ 
+
+ 
+
+    Formato de Imagem 
+
+        Ajustar​ 
+
+            Cor​ 
+
+            Efeitos Artísticos​ 
+
+        Estilos da Imagem​ 
+
+            Borda de Imagem​ 
+
+            Efeitos de ImAgem​ 
+
+        Organizar​ 
+
+            Posição​ 
+
+            Quebra de Texto Automática​ 
+
+ 
+
+    Design​ 
+
+ 
+
+        Formatação do Documento​ 
+
+            Temas​ 
+
+        Plano de Fundo da Página​ 
+
+            Marca D’água​ 
+
+            Cor da página​ 
+
+            Bordas da página ​ 
+
+    
+
+        Layout​ 
+
+            Configurar Página​ 
+
+                Margens​ 
+
+                Orientação​ 
+
+                Tamanho​ 
+
+                Colunas​ 
+
+                Quebra de Página
+                
+            Parágrafo​ 
+
+                Recuar​ 
+
+                Espaçamento​
+ 
+
+    Referências​ 
+
+        Sumário​ 
+
+            Sumário​ 
+
+            Atualizar Sumário​ 
+
+        Nota de Rodapé​ 
+
+            Inserir Nota de Rodapé​ 
+
+            Mostrar Notas​ 
+
+            Legendas​ 
+
+                Inserir Legendas​ 
+
+                Inserir Índice Ilustrações​ 
+
+​     Revisão​ 
+
+        Revisão de Texto​ 
+
+            Ortografia​ 
+
+            Dicionário de Sinônimos​ 
+
+            Contagem de Palavras​ 
+
+    Comentários​ 
+
+        Mostrar Comentários​ 
+
+​ 
+Exibir 
+
+    Modo de Exibição​ 
+
+        Modo de Leitura​ 
+
+        Layout de Impressão​ 
+
+    Mostrar​ 
+
+        Réguas​ 
+
+        Linhas de Grade​ 
+
+        Painel de Navegação​ 
+
+    Zoom​ 
+
+        Uma página​ 
+
+        Várias páginas​ 
+
+        Largura da Página​ 
+
+ 
+
+ Exercícios:
+
+
+## 1
+
+1) Altere o modo de visualização do documento para Layout de impressão.
+2) Retire a visualização da Régua.
+3) Troque a orientação da folha para “Retrato”.
+
+
+## 2
+
+
+1) Abra um novo arquivo em branco do Word.
+2) Digite o texto abaixo, exatamente igual ao texto da imagem:
+
+
+Escrito com erro para mostrar como corrigir no word.
+
+as principais causas do aquecimento global estão relacionaddas, para a maioria dos cientistas com as práticas humanas
+realizadas de maneira não sustentável, ou seja, sem garaantir a degradação ao meio natural como a poluição, as queimadas e 
+desmmatamento estariam na lista dos principais problemas desse problema climático.
+
+
+Corrigido:
+
+As principais causas do aquecimento global estão relacionadas, para a maioria dos cientistas com as práticas humanas
+realizadas de maneira não sustentável, ou seja, sem garantir a degradação ao meio natural como a poluição, as queimadas e 
+desmatamento estariam na lista dos principais problemas desse problema climático.
+
+
+3) Arrume os erros de português e de concordância do texto escrito, utilizando o corretor automático do Word.
+4) Salve o arquivo no formato “PDF” com o seguinte nome: “Exercício 2 Word 2019”.
+
+
+## 3
+
+1) Digite e edite o texto a seguir para ficar idêntico ao mostrado abaixo.
+O texto está formatado seguindo os princípios da ABNT, com recuo na primeira linha (parágrafo) de 1,5 cm, 
+fonte Arial 12 e itálico nas citações de nomes de obras, livros ou companhias.
+
+Texto Já digitei achar
+
+
+2) Insira o título “O que é Ciência”. Logo acima do texto que você escreveu.
+3) Formate o título para Negrito, Arial 16.
+4) Salve o arquivo com o nome “O que é Ciência” em alguma pasta do seu computador.
+
+
+## 4
+
+1) Crie uma tabela como a tabela abaixo:
+
+TABELA 
+
+2) Crie uma tabela utilizando a ferramenta do Word “Inserir planilha do Excel” e transfira esta tabela até a planilha do Excel.
+
+TABELA 
+
+3) Utilize a ferramenta “Tabelas Rápidas” para criar uma tabela tipo Calendário.
+4) Salve o arquivo com o nome “Exercício 4 Word 2019”.
+
+
+## 5
+
+1) Utilizando a tela de desenho de formas, faça um esquema o mais parecido possível com o mostrado na imagem abaixo.
+
+DESENHO usando Formas​
+
+2) Utilizando a SmartArt “Hierarquia, Organograma” como base, crie um organograma como o representado abaixo. Tente 
+alterar seu estilo, cores e fontes para deixa-lo o mais parecido possível ao organograma abaixo e utilize também as opções de desenho de forma.
+
+Organograma”
+
+
+
+## 6
+
+1- Digite o seguinte texto no seu documento:
+
+TEXTO 
+
+
+
+2- Aplique as seguintes modificações:
+• Crie um Título com tamanho de fonte 22, coloque-o em negrito
+• Aumente o tamanho da fonte do texto para 14
+• Mude a fonte do texto para Century Gothic
+• Use a opção de alinhamento de texto, “justificar”
+• Abaixo do texto adicione um gráfico do tipo pizza
+• No lugar do título, você deve colocar Consumo de álcool
+• Na legenda você deve colocar os seguintes países: 1º Bielorrússia, 2º Moldávia, 3º Lituânia, 4º Federação Russa, 5º Romênia, 6º Ucrânia e 7º Eslováquia
+• Os valores vão ser em litros por ano, 1º 17L, 2º 16L, 3º 15L, 4º 15L, 5º 14L, 6º 13L e 7º 10L
+
+TABELA
+
+GRAFICO
+
+Aplique o elemento gráfico “Rótulo de Dados”, o de sua preferência, apenas para mostrar os valores
+• Altere as cores do gráfico
+• Aplique um estilo
+3- Após terminar mostre para seu instrutor.
+
+## 7
+
+1- Digite o seguinte texto no seu documento:
+
+TEXTO
+
+2- Aplique as seguintes modificações:
+• Crie um Título com tamanho de fonte 22, coloque-o em negrito
+• Crie 3 subtítulos, um para cada parágrafo
+• Aplique estilo título 1 para o título principal
+• Aplique estilo título 2 para os subtítulos
+• Mude a fonte dos estilos para Perpetua
+• Mude a cor dos estilos para laranja
+• Aumente o tamanho da fonte do texto para 14
+• Use a opção de alinhamento de texto, “justificar”
+• Na parte esquerda do rodapé coloque o seu nome e aplique o efeito itálico
+• Coloque o espaçamento de parágrafo, “aberto”
+• Insira um sumário antes do texto
+3- Após terminar mostre para seu instrutor.
+
+
+
+## 8
+
+1- Digite o seguinte texto no seu documento:
+
+TEXTO
+
+2- Aplique as seguintes modificações:
+• Crie um Título no cabeçalho com tamanho de fonte 22, coloque-o em negrito
+• Mude a fonte de todo o texto para “Bell MT”
+• Aumente o tamanho da fonte para 16
+• Use a opção de alinhamento de texto, “justificar”
+• Copie o texto e cole em outra página, faça isso três vezes para aumentar o número de páginas.
+• Coloque uma cor em cada texto
+• Na parte esquerda do rodapé coloque o seu nome e aplique o efeito itálico
+• Na parte direita do rodapé coloque número de página
+• Aplique a opção de primeira página diferente
+• Mude a posição do cabeçalho e rodapé para 1cm
+3- Após terminar mostre para seu instrutor.
+
+## 9
+
+1- Digite o seguinte texto no seu documento:
+
+TEXTO
+
+2- Aplique as seguintes modificações:
+• Crie uma caixa de texto na parte superior da folha
+• Adicione um Título dentro da caixa de texto
+• Aplique um preenchimento a caixa de texto
+• Adicione um efeito de forma a caixa de texto
+• Centralize o Título e mude o tamanho da fonte para 22
+• Mude a fonte de todo o texto para “Times New Roman”
+• Aumente o tamanho da fonte para 14
+• Use a opção de alinhamento de texto, “justificar”
+• Entre no rodapé, e na parte esquerda dele coloque o seu nome e aplique o efeito itálico
+3- Após terminar mostre para seu instrutor.
+
+## 10
+
+1- Digite o seguinte texto no seu documento:
+
+TEXTO
+
+2- Aplique as seguintes modificações:
+• Crie um Título no cabeçalho com tamanho de fonte 18, coloque-o em negrito
+• Mude a fonte de todo o texto para “Bell MT”
+• Aumente o tamanho da fonte para 14
+• Use a opção de alinhamento de texto, “justificar”
+• Na parte esquerda do rodapé coloque o seu nome e aplique o efeito itálico
+• Altere os valores da margem para: Superior e Inferior 2cm, Esquerda e Direita 1
+• Altere o tamanho da folha para 15x25
+• Mude a orientação para paisagem
+3- Após terminar mostre para seu instrutor.
+
+
+## 11
+
+1- Digite o seguinte texto no seu documento:
+
+TEXTO
+
+2- Aplique as seguintes modificações:
+• Crie um Título com tamanho de fonte 22, coloque-o em negrito
+• Aplique um tema ao texto
+• Mude a fonte do tema para “Corbel”
+• Aumente o tamanho da fonte para 14
+• Use a opção de alinhamento de texto, “justificar”
+• Na parte esquerda do rodapé coloque o seu nome e aplique o efeito itálico
+• Na parte direita do rodapé coloque número de página
+• Coloque o espaçamento de parágrafo, “aberto”
+• Coloque uma marca D’água personalizada, escreva exercício
+• Aplique uma cor a página
+• Aplique uma borda fina a folha
+3- Após terminar mostre para seu instrutor.
+
+## 12
+
+1- Abra o texto 1 nos arquivos auxiliares. Ele deve ser exatamente assim:
+
+TEXTO
+
+Use a opção de revisão, Ortografia e Gramatica, e arrume todos os erros do texto, não alterando seu contexto.
+3- Traduza para espanhol a seguinte parte do texto:
+
+TEXTO
+
+Você deve começar a tradução em: “Usar a dor” e vai até o fim do texto.
+4- Usando dicionário de sinônimos altere as palavras “dor” do texto por outra correspondente.
+5- Usando dicionário de sinônimos altere as palavras “feliz” do texto por outra correspondente
+
+## 13
+
+Para fazer este exercício será necessário ter uma conta para acessar o OneDrive e a opção de Compartilhar. 
+Então se você não tem nenhuma conta, crie uma. Para isso basta ir em arquivo->salvar como->OneDrive e clicar em inscrever-se:
+
+IMAGEM
+
+1- Digite o seguinte texto no seu documento:
+
+TEXTO 
+
+2- Aplique as seguintes modificações:
+2
+• Crie um Título com tamanho de fonte 22, coloque-o em negrito
+• Aumente o tamanho da fonte do texto para 16
+• Use a opção de alinhamento de texto, “justificar”
+• Na parte esquerda do rodapé coloque o seu nome e aplique o efeito itálico
+• Aumente as margens da folha manualmente: Superior e Inferior para 1,5, Esquerda e Direita para 2
+• Aumente o espaçamento entre parágrafos, utilizando a opção “Comprimido”
+• Aplique uma textura a folha
+3- Salve no OneDrive
+4- Feche o Word 2019
+5- Abra o Word 2019 e a partir do menu Abrir em Arquivo, procure o arquivo pelo OneDrive e abra-o.
+6- Após terminar mostre para seu instrutor.
+
+
+## 14
+
+1- Digite o seguinte texto no seu documento:
+
+TEXTO
+
+2- Aplique as seguintes modificações:
+• Crie um Título com tamanho de fonte 22, coloque-o em negrito
+• Aumente o tamanho da fonte do texto para 16
+• Use a opção de alinhamento de texto, “justificar”
+• Na parte esquerda do rodapé coloque o seu nome e aplique o efeito itálico
+• Aumente as margens da folha manualmente: Superior e Inferior para 1,5, Esquerda e Direita para 2
+• Aumente o espaçamento entre parágrafos, utilizando a opção “Comprimido”
+• Aplique uma borda a folha
+3- Salve em PDF pelo menu Salvar Como e depois salve pelo menu Exportar.
+4- Mostre os dois arquivos ao seu instrutor.
+
+

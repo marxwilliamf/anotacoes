@@ -15,6 +15,14 @@ Tipo de notícia: Desenvolvimento
 
 
 
+
+lsblk -l -o name,fstype|grep p3
+
+
+
+
+
+
 //////////////////////////////////////////////////////////////////
 sudo iw reg get
 sudo iw reg set BR
@@ -391,6 +399,8 @@ sudo apt-key add /tmp/key.pub
 apt-get clean
 
 find /var/cache/apt/ -name \*.deb
+
+find . -name "*Geometria*"
 
 du -h
 

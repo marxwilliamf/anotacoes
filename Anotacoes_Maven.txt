@@ -7,6 +7,9 @@ M2=%M2_HOME%\bin
 MAVEN_OPTS=-Xms256m -Xmx512m
 
 
+Create a Project / Criar Criando um projeto
+mvn archetype:generate //cria um projeto de forma interativa 2095 = QuickStart 2096 = Simple
+
 criar projeto sem archetype
 mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 mvn archetype:generate -DgroupId=com.example -DartifactId=my-project -DinteractiveMode=false

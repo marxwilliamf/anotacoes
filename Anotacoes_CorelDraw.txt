@@ -3,6 +3,9 @@ Z: Zoom;
 H: Hand;
 Espaço: Alterna entre o útimo documento;
 
+2 Cliques Retangulo: Cria Retângulo tamanho da página
+
+
 Ordem dos objetos nas camadas são dadas por ordem de criação;
 
 Objetos:
