@@ -1,0 +1,137 @@
+Conflítos de Interesses
+    Coerção
+    Política
+
+
+
+Polite
+    Institucional - Orgãos Públicos, estrutura institucional, delineada pelo sistema político
+Politics
+    Processual - Partidos, alianças coalizões, barganha, convencimento entre atores políticos para tomada de decisão.
+    Pólítica = uma decisão política pode trazer várias Políticas Públicas.
+Policy - Policies - Política Pública
+    Material - conteúdos concretos outputs resultantes das políticas públicas, políticas públicas (P.P.)
+    Serve para manter ou modificar um aspécto social. Previnir ou corrigir.
+    manter a harmonização das atividades estatais e privadas.
+
+    Inputs, ..., Inputs -> Withinputs(estimulos de fora e de dentro) -> outputs = (pode ser comparado com um fúnil de demandas onde são selecionadas as mais pertinentes. (WFM))
+
+    Inputs: 
+        Apoios
+            Obediência e cumprimento de leis e regulamentos;
+            Votar
+            Respeito a autoridades e símbolos
+            Disposição para pagar tributos e para prestar serviços, como por exemplo serviço militar.
+            envolvimento na implementação de programas governamentais;
+            participação em manifestações públicas
+        demandas
+            reinvindicação de bens e serviços, como saúde educação, transporte segurança, previdência social.
+            Exigência de desenvolvimento social e econômico.
+            Demandas por participação no sistema político;
+            Exigência por transparência e controle da corupção;
+            Demandas por atuação governamnental do setor público;
+
+            NOVAS
+                Não existia antes (Covid), um novo ator um novo problema
+            RECORENTES
+                Vacinação da gripe,     ou sistema não chega a uma política pública adequada.
+            REPRIMIDAS
+                Demanda que o sistema não processa ou não quer processar, decide reprimir essa demanda e manter ela afastada do sistema de pautas.
+                Estado de coisas (ex.: Antigamente muito necessitava-se de uma reforma tributária)
+
+
+                       _______  
+            Apoios    ¦       ¦ Decisões Políticas 
+                      ¦  SP   ¦
+            Demendas  ¦_______¦ Políticas Públicas
+                ^                         ¦               
+                ¦_________________________¦
+
+    output = saída = P.P.
+        Decisões políticas - nem tuda decição decore em ação de Políticas Públicas.
+        Políticas Públicas
+            uma política pública geralmente envolve mais do que uma decisão e requer diversas ações.
+            incidêm em uma série de decisões sobre quem, como e quando será beneficiádo por uma polítia pública. através de um programa de ação governamental em um comêmpêndio 
+            de processos juridicamente regulados que visão a realização de objetivos sociais através dos méios necessários a sua consecução e o intervalo de tempo para sua execução..
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Políticas Públicas
+    A forma como estado organiza sua ação ou intervenção sobre a sociedade.
+    Toda política pública é uma escolha do sistema político.
+    A formulação de políticas públicas devem ser compreendidas como o processo de por meio do qual o governo traduz seus propósitos em programas e ações.
+    Política publica não é sinônimo de decisão política, pois as decisões não necessariamente implicam em P.P.
+
+    Componentes
+        INSTITUCIONAL
+            Elaborada ou decidida por autoridade formal legalmente constituída, no âmbito da sua competência e é coletivamante vinculânte.
+        DECISÓRIO
+            COnjunto de decisões, relativo a escolha de fins e meios, de longo ou curto alcance numa situação específica e como resposta a um problema e necessidades.
+        COMPORTAMENTAL
+            Jeito de fazer as coisas, ação ou inação, fazer ou de não fazer. implica na escolha de um curso de ação.
+        CAUSAL
+            produtos de ações que tem efêitos no sistema social e político.
+
+
+
+
+Ciclo
+    Problema
+    Agenda
+    Próximos itens neste mesmo nível Sobrepoen-se{
+    Formulação
+    Implementação
+    Controle
+        Acompanhamento
+        Avaliação
+    }
+
+
+Police Arena (Rob Lowi)
+                 _ 
+                ¦ Distributivo - parece que não tem custos só benefícios (cesta básica enxente; renuncia fiscal para produzir tablets no nordeste, existe um custo, alguém gerelmente vai pagar mais imposto para suprir), 
+                ¦       quase ninguém fica contra, não se enxerga o custo ou ele não é grande.
+    Sociedade - ¦ Redistributivo - Tira de um grupo e bota no outro, sendo esse constituído por camaads socias ou grupos da sociedade, gera conflito, proceso político polarizado, 
+                ¦Regulatório - Não serve para conceder recursos, e sim regular algum tipo de aspecto da sociedade, bem como econômica, administrativa, ambiental.
+                        efeitos e benefícios de uma política regulatoria não são determinados previaente, dependem da política;
+    
+Sistema Político - [ Constitutivo (Estruturadora)- definem as regras do jogo e definem as estruturas dos processos políticos. Estrutura o processo político (Ex.: decisões processo eleitoral, ou como se lida com medidas provisórias) estabelece condições gerais de funcionamento do sistema político, onde serão desenvolvidas as demais políticas já mensionadas que são distributiva, redistributiva e Regulatórias.
+
+
+
+Multiplos Fluxos
+
+Pulítica Pública
+    (Problema, Solução, Política) -> Janela de Oportunidade -> Política Pública
+                                              ^
+                                              ¦
+                                  Empreendedor de Políticas
+
+PROBLEMA
+    Reconhecimento de um problema
+    crise ou evento dramático
+    indicador de "peso" ou seja com alta magnitude. (ex.: inflação cresceu muito; indicador de subida de desigualdade)
+    Acomulação de informações e experiências da execução das políticas existentes
+
+SOLUÇÕES
+    Dependem de expecialistas da comunidade técnico científica que dewsenvolvem e apresentam difertentes propostas.
+    Kingdon
+        considera que as idéias geradas no fluxo das soluções não estão necessáriamente relacionadas ao reconhecimento de problemas específicos.
+Política
+    Conjuntura política favoravel para que o problema entre na agenda, pode ser mudança de governo, e ou das forças organizadas da sociedade,  
+    "clima" nacional e ou movimentos culturais.
+
+
+    Juntando esses três itens acima é necessário Empreendedores da política.
+
+
+    Empreendedores da Política
+        especialistas na questão
+        hábeis negociadores com conexões políticas
+            dentro - dirigentes, burocratas, servidores de carreira ...
+              ou 
+            fora dos governos - lobistas, acadêmicos ou jornalistas ...
+        tem um papel essencial na articulação entre problemas e soluções), problemas de força política e entre estas, e as propostas existentes
+        eles amaram os três fluxos para fazer uma política pública
+        
