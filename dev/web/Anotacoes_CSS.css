@@ -1,0 +1,144 @@
+
+
+
+<link rel="stylesheet" href="mystyle.css">
+
+
+/* seleção por tipo de elemento */
+
+p {
+	font-size:12px;
+}
+
+/* seleção por id do elemento */
+
+#paragrafo01 {
+	font-size:30px;
+}
+
+/* seleção por classe */
+
+.nome_da_classe {
+	font-size:50px;
+}
+
+
+	height:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#66FF00;
+	letter-spacing:20px;
+	word-spacing:40px;
+	text-align:right;
+	text-transform:uppercase;
+
+
+Font Family {
+	Arial, Helvetica, sans-serif
+	Verdana, Geneva, sans-serif 
+	Georgia, "Times New Roman", Times, serif 
+	"Courier New", Courier, monospace
+	Tahoma, Geneva, sans-serif
+	"Trebuchet MS", Arial, Helvetica, sans-serif
+	"Times New Roman", Times, serif
+}
+
+Text {
+	letter-spacing:20px;
+	word-spacing:40px;
+	text-align:right; 	/* left, center, right, justify */
+	text-decoration:overline; 	/* none, underline, overline, line-through, blink */
+	text-indent:10%;
+	text-transform:uppercase; 	/* none, capitalize, uppercase, lowercase */		
+}
+	
+RGB HEX
+#bb5588 = #b58
+
+
+
+
+
+border: 10px dotted black;
+border-color: red;
+background-image: url('w3css.gif');
+background-image: url|none|initial|inherit;
+
+background-repeat: no-repeat;
+background-attachment: fixed | scroled  ?;
+background-attachment: scroll|fixed|local|initial|inherit;
+background-position: center top;
+background-size: cover;
+background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;
+background-clip: border-box|padding-box|content-box|initial|inherit; 
+background-origin: content-box, border-box;
+
+
+background-image: url|none|initial|inherit;
+
+
+background-color: color|transparent|initial|inherit;
+background-color: rgba(201, 76, 76, 0.3);
+background-color: rgb(201, 76, 76);
+background-color: #92a8d1;
+background-color: hsla(89, 43%, 51%, 0.3);
+
+
+background-image: radial-gradient(green, yellow, violet 75%);
+background-image: radial-gradient(green 1%, yellow 25%, violet 75%);
+background-image: repeating-radial-gradient(red 7%, yellow 5%, green 39%);
+background-image: repeating-radial-gradient(red 5% , yellow 3%, blue 25%, green 30% );
+
+
+
+background-image: url('paper.gif');
+background-image: url('img_tree.gif'), url('paper.gif');
+background-image: conic-gradient(red, yellow, green);
+background-image: linear-gradient(red, yellow, blue);
+background-image: radial-gradient(red, green, blue);
+background-image: repeating-conic-gradient(red 10%, yellow 20%);
+background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

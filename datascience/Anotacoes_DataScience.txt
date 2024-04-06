@@ -1,0 +1,11 @@
+
+
+
+
+Quantitativo
+    Discreto - que pode ser contado em inteiros
+    Contínuo - que é mensurado em uma medida específica como metros, minutos, kilometros
+
+Qualitativo
+    Nominal - que da nome as coisas
+    Ordinal - que pode ser ordenado

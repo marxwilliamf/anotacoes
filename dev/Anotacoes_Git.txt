@@ -1,3 +1,9 @@
+?? - Untracked files
+A - Files added to stage
+M - Modified files
+D - Deleted files
+
+
 Listar arquivos commitados em um commit:
 
 git diff-tree --no-commit-id --name-only -r <hash_do_commit>
@@ -46,7 +52,9 @@ git config --global --unset credential.helper
 touch texto.txt
 git init
 git status
+git status --short
 git add *
+git add -all //shorthand = git add -A
 git add . // adiciona todos os arquivos do projeto.
 git restore file.txt //unstage e volta ao estado antes do stage até o ultimo add //modified->umodifiable
 git restore --staged file.txt //somente tira do staged sem fazer alterações //staged ->modified
@@ -89,6 +97,10 @@ git diff 630cb9e 49bdd97			//diferença entre o commit 1 e 2, sendo o 1 o mais r
 git diff 49bdd97..630cb9e 			//pode-se também utilizar ".." parece funcionar igual
 
 git log --author "Will"
+
+
+git command -help -  See all the available options for the specific command
+git help --all -  See all possible commands
 
 git help log //para ver opções
 
@@ -349,6 +361,7 @@ git push origin v1.1
 
 git cherry-pick <hash> 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+git push origin
 git push --force -u origin master
 git reset --hard HEAD									//ainda não fez commit da alteração quer retornar para o ultimo commit
 git reset HEAD~1       									//apaga N commits, Não Modifica os arquivos da ṕasta,apaga apenas o histórico de log, o número após ~ diz quantos commits retroceder

@@ -1,17 +1,63 @@
 docker run hello-world
 
 Docker create
-docker run 
+docker run
 docker pause
 docker unpause
-docker stop 
-docker start 
-	
-docker attach 
-docker wait 
-docker rm 
+docker stop
+docker start
+
+docker attach
+docker wait
+docker rm
 docker kill
 /////////////////////////////////////////
+
+
+
+
+docker build -t myspring-app .
+docker run -d --name my-app my-spring-app
+
+FROM mysql:8.3.0
+
+
+
+ENV MYSQL_USER root
+ENV MYSQL_PASSWORD password
+ENV MYSQL_ROOT_PASSWORD password
+
+EXPOSE 3306
+
+ENTRYPOINT ["mysqld", "--default-authentication-plugin=mysql_native_password"]
+
+
+esse dockerfile com esse comando não ficou rodando
+
+docker build -t mysql .
+docker run -d --name sql mysql
+
+docker run -d --name wfm-sql -p 3306:3306 mysql-db
+
+docker run -d --name my-mysql --restart=always -p 3306:3306 <image>
+
+
+docker run -d ubuntu tail -f /dev/null
+
+
+
+Acessar containers Docker que já estão rodando
+$ docker attach NOME_CONTAINER
+
+
+
+
+
+
+
+
+
+
 #specify a Base Image
 
 FROM ubuntu:latest //specify Docker Image Name and start the build process
@@ -64,9 +110,9 @@ COPY <source>... <destination>
 # To Install All dependencies for Node.js App
 
 COPY package*.json ./
-RUN npm install 
+RUN npm install
 
-# To copy all application packages 
+# To copy all application packages
 COPY . .
 
 ///
@@ -110,15 +156,15 @@ WORKDIR /nodejsapp //To Create nodejsapp directory
 
 ARG é usado para definir variáveis que podem ser passadas ao construir uma imagem usando o comando docker build. x
 
-ENV é usado para definir variáveis de ambiente que estarão disponíveis quando um contêiner for executado a partir da imagem. 
+ENV é usado para definir variáveis de ambiente que estarão disponíveis quando um contêiner for executado a partir da imagem.
 As variáveis definidas com o comando ENV são persistentes e estarão disponíveis quando o contêiner for executado
 
 
 //JAVA_PATH estará disponível durante a construção da imagem, mas não estará disponível quando o contêiner for executado
-ARG JAVA_PATH=/opt/jdk/jdk1.8.0_251 
+ARG JAVA_PATH=/opt/jdk/jdk1.8.0_251
 ENV JAVA_HOME ${JAVA_PATH}
 
-//ONBUILD in Dockerfile Instruction is used to specify command that runs when the image in Dockerfile is 
+//ONBUILD in Dockerfile Instruction is used to specify command that runs when the image in Dockerfile is
 //used as base image for another image
 
 FROM node:12
@@ -272,8 +318,8 @@ sudo docker run hello-world
 
 sudo docker run --name meucontainer  hello-world
 
-sudo docker rm <CONTAINER ID> 
-sudo docker rm name 
+sudo docker rm <CONTAINER ID>
+sudo docker rm name
     sudo docker rm meucontainer
 
 sudo docker container run -it ubuntu /bin/bash
@@ -284,7 +330,7 @@ docker container run nginx
 docker container run -d nginx //modo deamon, roda em background
   docker logs e236a0f6a959
   docker container exec -it e236a0f6a959 /bin/bash
-  
+
   docker container stop e236a0f6a959
   docker container rm e236a0f6a959
     docker container rm -f e236a0f6a959 //caso não tenha feito um stop usar -f

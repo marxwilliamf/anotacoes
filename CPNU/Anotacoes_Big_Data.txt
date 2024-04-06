@@ -1,0 +1,1 @@
+3V = {[Volume, velocidade, variedade, veracidade, valor]};

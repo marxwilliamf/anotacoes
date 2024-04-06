@@ -1,0 +1,41 @@
+
+
+RFC 4949 (Internet Security Glossary, Version 2)
+    O Processo de verificação de uma Indentidade alegado por ou para uma entidade do sistema.
+        
+
+Autenticação de Usuário
+    Identificação
+        Usuário provê uma indentidade cadastrada ao usuário
+    Autenticação
+        Fornece um meio para estabelecer a validade da identidade
+        Há 3 meios de Autenticação que podem ser usados isolados ou combinados
+            Usuário -> Sabe(Conhecimento): Senhas etc.
+            Usuário -> Tem(Objetos): Tokens, Smart Card etc.
+            Usuário -> É/Faz(Caracteristicas): Biometria
+                Biometria Estática: impressão digital, face etc.
+                Biometria Dinâmica: padrão de voz, ritmo de digitação etc.
+
+
+
+
+
+2FA = Two Factor Autentication
+MFA = Multi Factor Autentication
+
+SSO = Single Sign-On 
+    (AD) Active Directory: Tanto dentro da empresa quanto na núvem
+    SSO do Google: Autenticação do Google
+
+    Protocolos:
+        OpenID Connect
+        SAML 2.0
+
+
+Auditoria
+    Revisão de exames e registros para verificar a adequação das políticas de acesso e procedimentos estabelecidos as normas estabelecidas pela empresa orgão regulador ou norma adotada.
+        Detecção de vulnerabilidades
+            Recomendação de alterações em relação a controles, políticas e procedimentos.
+
+
+

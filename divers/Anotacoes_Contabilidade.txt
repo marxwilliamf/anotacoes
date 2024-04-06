@@ -1,0 +1,72 @@
+CPC 00
+
+
+Balanço Patrimonial (BP) pi Demosntração da Posição Financeira
+    Ativos
+    Passivos
+    Patrimônio Líquido
+        Patrimônio Social
+        Reserva de Lucrose
+        Ajustes Avaliação Patrimonial
+
+
+
+Demonstração do Resultado do Exercício (DRE)
+    Receitas + Ganhos
+        Receita é Recorrente
+        Ganho é esporádico, não é com que a empresa trabalha
+    Despesas + Perdas
+        Despesas - Não produtivos
+            Administração
+            Comercial
+            Despesas Financeiras: Empréstimos, títulos
+        Custos - Produção
+            CPV - Custo do Produtos Vendidos
+            CMV - Custo das Mercadorias Vendidas
+            CSP - Custo dos Serviços Prestados
+        Perdas - não frequente
+    Lucro Liquido <-> Prejuízos
+
+
+
+
+
+Imformação Contábil - Usuários Internos: Informação ampla, estratégicas, não regulada;
+    Especialistas
+    Gestores
+    Administradores
+
+
+informação Contábil - Usuários Externos
+    Investidores * CPC
+    Credores * CPC
+    Fornecedores
+    Empregados
+    Clientes
+    Governo
+    Sociedade
+
+
+Colaborador
+    Fará tomada de decisão?
+        Sim: Usuário Interno
+        Não: Usuário Externo
+
+
+
+
+
+
+Pressupostos da Contabilidade
+    Entidade
+    Continuidade
+    Competência
+        Reconhecer receitas e despesas quando elas ocorem, independentemente do recebimento e do pagamento
+
+
+
+CPC - Comitê de Pronunciamentos Contábeis
+
+
+
+

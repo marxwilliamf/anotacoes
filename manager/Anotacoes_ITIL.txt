@@ -1,0 +1,24 @@
+As quatro dimensões do Gerenciamento de Serviço
+  FLU - OR de PA - IN
+    Fluxo de Valor e Processos
+      Fornecimento de Produtos, Entrega de Serviços, Parceria de Serviços
+        Forma de Cooperação
+        Saída
+        Responsabilidade pelas Saídas
+        Responsabilidade pelos Resultados
+        Niver de Formalidade
+    Organização e Pessoas
+      CHA
+        Conhecimento - Saber
+        Habilidade - Saber Fazer
+        Atitude - Querer Fazer
+
+    Parceiros e Fornecedores
+      Relacionamentos acordados e contratados entre organizações envolvidas no projeto, desenvolvimento, implantação, entrega, suporte e melhoria contínua dos serviços.
+      Algumas empresas podem achar melhor centralizar várias competências em seu time outras em terceirizar a parceiros e fornecedores.
+    Informação e Tecnologia
+      Gerenciamento da informação para agregar valor ao ciente
+      Quais informações são gerenciadas
+      O que o suporte precisa saber para disponibilizar o serviço: informações e Conhecimento
+      Como ativos de informação e conhecimento são protegidos, gerenciados, arquivados e descartados.
+      Lei - LGPD

@@ -1,4 +1,11 @@
 
+find . -regex ".*Objeto.*\|.*OO.*\|.*POO.*"
+find . -name "*OO*"
+
+
+
+
+
 EFI
 
 /boot/efi     //tipo fat32 500MB //No Ubuntu escoler Tipode Partição EFI que ele configura automático
@@ -43,7 +50,7 @@ sudo apt install libgcrypt20 libgcrypt20-dev libnl-utils
 
 https://packages.debian.org/bullseye/all/firmware-atheros/download
 
-lspci -nnkd::0280 
+lspci -nnkd::0280
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -65,7 +72,7 @@ sudo service network-manager restart
 
 Também é possível usar esses dois últimos comandos para testar se isso resolverá o problema sem modificar seu sistema. O primeiro remove o módulo (descarrega o driver), o segundo insere (carrega) novamente com a opção adicional.
 
- 
+
 :::::::::::::::::::::::::::::::::::::
 
 
@@ -75,7 +82,7 @@ sudo apt install build-essential cmake git m4 texinfo
 git clone https://github.com/qca/open-ath9k-htc-firmware.git
 cd open-ath9k-htc-firmware
 
-Checkout the latest tagged release: 
+Checkout the latest tagged release:
 
 git tag
 1.3.1
@@ -131,7 +138,7 @@ Android Studio
 
 
 
-	Instalar NTFS 
+	Instalar NTFS
 
 	apt-get update && apt-get install ntfs-3g
 
@@ -159,7 +166,7 @@ run on gnome fix on gnome gdb conflict with gnome gdbus.error org.freedesktop.db
 
 
 sudo apt-get purge gnome-session
-sudo apt-get autoremove 
+sudo apt-get autoremove
 sudo apt-get autoclean
 sudo apt-get install gnome-session
 startx
@@ -205,7 +212,7 @@ sudo apt-get install libmysqlclient21
 
 
 sudo apt update
-sudo apt install snapd 
+sudo apt install snapd
 sudo snap install core
 
 ##################
@@ -223,7 +230,7 @@ d
 Set up the Google Chrome repository.
 
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/googlechrome-linux-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
- 	
+
 Install Google Chrome
 
 Update the repository index.
@@ -276,7 +283,7 @@ Descompactando
 
 tar -xzvf arquivo.tar.gz
 
-Compactando 
+Compactando
 tar -czvf arquivo.tar.gz pasta
 
 
@@ -313,7 +320,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 
 export PATH="$PATH:/usr/local/share/flutter/flutter/bin"
-	
+
 alias studio="/./usr/local/share/studio/android-studio/bin/studio.sh"
 alias sts="/./home/alemao/Downloads/sts-4.11.1.RELEASE/SpringToolSuite4"
 alias stsIcon="//home/alemao/Downloads/sts-4.11.1.RELEASE/icon.xpm"
@@ -326,13 +333,13 @@ export TERM=terminal
 
 
 sudo apt install firmware-ralink firmware-atheros firmware-realtek firmware-iwlwifi firmware-b43-installer firmware-b43legacy-installer atmel-firmware  firmware-brcm80211 firmware-ipw2x00 firmware-libertas libertas-firmware zd1211-firmware
- 
- 
- 
+
+
+
 ifconfig
 
 sudo apt-get install net-tools
- 
+
 
 
 ## Arquivos Android ############################################################
@@ -452,7 +459,7 @@ id root
 root ALL=(ALL:ALL) ALL
 
 # Allow members of group sudo to execute any command
-%sudo ALL=(ALL:ALL) ALL 
+%sudo ALL=(ALL:ALL) ALL
 
 addgroup "nomedeusuario" sudo
 
@@ -464,7 +471,7 @@ sudo apt-get update
 
 ##INSTALAÇÂO DRIVERS############################################################
 
-sudo apt-get install firmware-realtek firmware-brcm80211 
+sudo apt-get install firmware-realtek firmware-brcm80211
 
 cat /etc/apt/sources.list
 	main contrib non-free
@@ -513,7 +520,7 @@ sudo apt-get install texlive-math-extra
 
 Spotify
 
-curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
+curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
 sudo apt-get update && sudo apt-get install spotify-client
@@ -558,7 +565,7 @@ sudo gpg --no-default-keyring --keyring
 
 ////////////////////////////////////////
 
-/etc/systemd/logind.conf 
+/etc/systemd/logind.conf
 
 HandleLidSwitch=ignore
 
@@ -570,7 +577,7 @@ systemctl restart systemd-login
 ls ..   cp ../alguma coisa //lista e copia coisas do diretório superior.
 cd -   //volta ao diretorio anterior mente usado ex você esta em /usr/local e faz um cd /home ao fazer cd - volta para /usr/local
 
-alternativa à tecla home e end no terminal é Ctrl + A, e Ctrl + E, respectivamente. 
+alternativa à tecla home e end no terminal é Ctrl + A, e Ctrl + E, respectivamente.
 
 abcdefghi ->   abc|defghi + Ctrl + U -> defghi + Ctrl + E /+/ Ctrl + Y-> defghiabc   //Ctrl + U recorta o que ta à esquerda e Ctrl + Y Cola o que foi copiado
 abcdefghi ->   abc|defghi + Ctrl + K -> abc + Ctrl + A /+/ Ctrl + Y-> abcdefghi      //Ctrl + K recorta o que ta à direita e Ctrl + Y Cola o que foi copiado
@@ -581,31 +588,31 @@ Ctrl + L // limpa tela mas mantem a linha atual
 
 Drivers de rede
 
-Atmel /			sudo apt install atmel-firmware 
+Atmel /			sudo apt install atmel-firmware
 
-Atheros /		sudo apt install firmware-atheros 
+Atheros /		sudo apt install firmware-atheros
 
-Broadcom /		sudo apt install firmware-b43-installer    
-	     	     ou sudo apt install firmware-b43legacy-installer 
-	     	     ou sudo apt install firmware-brcm80211 
+Broadcom /		sudo apt install firmware-b43-installer
+	     	     ou sudo apt install firmware-b43legacy-installer
+	     	     ou sudo apt install firmware-brcm80211
 
-Intel /			sudo apt install firmware-ipw2x00 
-	     	     ou sudo apt install firmware-iwlwifi 
-	     
-Marvell Libertas / 	sudo apt install firmware-libertas 
+Intel /			sudo apt install firmware-ipw2x00
+	     	     ou sudo apt install firmware-iwlwifi
+
+Marvell Libertas / 	sudo apt install firmware-libertas
 
 ou
 
-    sudo apt install libertas-firmware 
+    sudo apt install libertas-firmware
 
-Ralink /		sudo apt install firmware-ralink 
+Ralink /		sudo apt install firmware-ralink
 
-Realtek / 		sudo apt install firmware-realtek 
+Realtek / 		sudo apt install firmware-realtek
 
-Texas Instruments / 	sudo apt install firmware-ti-connectivity 
+Texas Instruments / 	sudo apt install firmware-ti-connectivity
 
 Para os chipset: * ZyDAS ZD1211 * ZyDAS ZD1211B * Atheros AR5007UG (alternatively known as AR2524/AR5524)
-			sudo apt install firmware-zd1211 
+			sudo apt install firmware-zd1211
 
 
 //////////////////////////////////////
@@ -617,7 +624,7 @@ Para os chipset: * ZyDAS ZD1211 * ZyDAS ZD1211B * Atheros AR5007UG (alternativel
 plugins=ifupdown,keyfile
 
 [ifupdown]
-managed=false 
+managed=false
 ////
 
 mudar para
@@ -626,7 +633,7 @@ mudar para
 plugins=ifupdown,keyfile
 
 [ifupdown]
-managed=true 
+managed=true
 ////
 
 

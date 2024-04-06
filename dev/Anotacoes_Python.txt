@@ -1,0 +1,217 @@
+
+
+
+python -m ensurepip --upgrade
+
+python get-pip.py
+
+
+
+
+
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+planets[0:3] >>> ['Mercury', 'Venus', 'Earth']
+planets[:] >>> ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+
+planets[:3] >>> ['Mercury', 'Venus', 'Earth']
+
+planets[1:-1] >>> ['Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus']
+
+planets[-3:] >>> ['Saturn', 'Uranus', 'Neptune']
+
+
+
+planets[:3] = ['Mur', 'Vee', 'Ur']
+print(planets) >>> ['Mur', 'Vee', 'Ur', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+
+planets[:4] = ['Mercury', 'Venus', 'Earth', 'Mars',]
+
+planets.append('Pluto')
+
+
+loud_short_planets = [planet.upper() + '!' for planet in planets if len(planet) < 6]
+loud_short_planets
+>>> ['VENUS!', 'EARTH!', 'MARS!']
+
+
+def count_negatives(nums):
+    return len([num for num in nums if num < 0])
+
+def sum_negatives(nums):
+    return sum([num for num in nums if num < 0])
+
+sum_negatives([5,-2,-1,-3,2,5,8,10])
+>>> -6
+
+
+
+x = 0.125
+>>> x.as_integer_ratio()
+(1, 8)
+
+numerator, denominator = x.as_integer_ratio()
+print(numerator, '/',  denominator, '=',  numerator / denominator)
+
+
+a = 1
+b = 0
+a, b = b, a
+print(a, b)
+
+
+
+
+s = 'steganograpHy is the practicE of conceaLing a file, message, image, or video within another fiLe, message, image, Or video.'
+msg = ''
+# print all the uppercase letters in s, one at a time
+for char in s:
+    if char.isupper():
+        print(char, end='')
+
+>>> HELLO
+
+
+
+\' 	' 	'What\'s up?' 	          What's up?
+\" 	" 	"That's \"cool\"" 	      That's "cool"
+\\ 	\ 	"Look, a mountain: /\\"   Look, a mountain: /\
+\n 	    "1\n2 3"                  1
+                                  2 3
+
+
+
+
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+planet_to_initial = {planet: planet[0] for planet in planets}
+planet_to_initial
+
+{'Mercury': 'M', 'Venus': 'V', 'Earth': 'E', 'Mars': 'M', 'Jupiter': 'J', 'Saturn': 'S', 'Uranus': 'U', 'Neptune': 'N'}
+
+
+planet_to_initial.items()
+planet_to_initial.keys()
+planet_to_initial.values()
+
+
+for planet, initial in planet_to_initial.items():
+    print("{} begins with \"{}\"".format(planet.rjust(10), initial))
+
+       Mercury begins with "M"
+         Venus begins with "V"
+         Earth begins with "E"
+          Mars begins with "M"
+       Jupiter begins with "J"
+        Saturn begins with "S"
+        Uranus begins with "U"
+       Neptune begins with "N"
+
+
+'Saturn' in planet_to_initial
+True
+
+
+
+
+
+claim = "Pluto is a planet!"
+words = claim.split()
+' 👏 '.join([word.upper() for word in words])
+
+datestr = '1956-01-31'
+year, month, day = datestr.split('-')
+
+'/'.join([month, day, year])
+
+
+
+
+
+
+
+numbers = {'one':1, 'two':2, 'three':3}
+
+for k in numbers:
+    print("{} = {}".format(k, numbers[k]))
+
+>>> one = 1
+    two = 2
+    three = 3
+
+
+
+
+
+
+cmd
+    pip install numpy
+
+
+
+
+import math
+
+print("It's math! It has type {}".format(type(math)))
+
+print(dir(math))
+
+print("pi to 4 significant digits = {:.4}".format(math.pi))
+
+math.log(32, 2)
+
+help(math.log)
+
+
+help(math)
+
+
+
+import math as mt
+mt.pi
+
+import math
+mt = math
+
+
+
+from math import *
+print(pi, log(32, 2))
+
+
+from math import *
+from numpy import *
+print(pi, log(32, 2))
+
+
+
+from math import log, pi
+from numpy import asarray
+
+
+import numpy
+print("numpy.random is a", type(numpy.random))
+def printf(t):
+    print("it contains names such as...",
+        dir(numpy.random)[t:]
+        )
+
+rolls = numpy.random.randint(low=1, high=6, size=10)
+rolls
+
+
+table = numpy.random.randint(5, size=(2, 4))
+
+array([[3, 1, 2, 1],
+       [0, 4, 0, 2]])
+
+
+xlist = [[1,2,3],[2,4,6],]
+type(xlist)
+<class 'list'>
+
+x = numpy.asarray(xlist)
+type(x)
+<class 'numpy.ndarray'>
+
+
+
+

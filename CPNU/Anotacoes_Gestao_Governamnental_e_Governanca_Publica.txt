@@ -1,0 +1,80 @@
+
+
+
+
+Processo Decisório
+
+Administrar: "PODC"
+    Planejar: onde a organização pretende chegar e como será feito
+        Estipular objetivos e metas
+        Meios de Realização(Atividades e Recursos)
+        Meios de Controle
+    Organizar: Organizar a estrutura para a divisão do trabalho em suas diversas unidades
+        Alocação de:
+            Pessoas
+            Equipamentos
+            Recursos
+        De forma a permitir a constitutição de processos produtivos, racionais e eficiêntes em função dos resultados PLANEJADOS.
+    Dirigir: Liderança e cordenação das equipes e processos produtivos, assegurando melhor aproveitamento possível dos recursos com foco em resultados Organizacionais.
+    Controlar: Verificar a execução dos planos e programações aplicando correções necessárias
+        Definição de padrões e Comparação entre sua realização e para com eles através de métricas para aplicar medidas corretivas.
+        Medição do que esta sendo Realizado (Métricas (WFM))
+        medidas corretivas
+
+
+
+
+Decisões: Escolhas entre alternativas e possibilidades tomadas para resolver problemas ou aproveitar oportunidades,
+          podendo levar a uma nova tomada de decisões as quais podem ser programadaa ou não.
+    Alternativas e possibilidades
+    Tomada de decisão
+    Programadas ou Não Programadas
+
+
+Processos Decisório RACIONAL:
+    Identificação do problema ou oportunidades
+    Diagnóstico
+    Concepção de Alternativas
+    Decisão
+    Avaliação
+
+
+Racionalidade Absoluta: deveria ter o extremo grau de controle sobre a situação enfrentada
+    Concientizace de um problemas
+    Define uma meta
+    Analiza cuidadosamente os meios e Alternativas
+    Escolhe o meio que melhor se alinha com o resultado pretendido.
+
+
+Racionalidade Limitada - Herbert Simon
+    Autor da racinalidade limitada diz que a racionalidade absoluta está além das capacidades dos atores decisórios,
+    na maioria dos casos não existe clareza sobre as alternativas, valores, fotos, meios e fins que orientam a decisão.
+    As informaçõs sobre os impactos são imperfeitas e falhas
+    Não existem recursos técnicos para uma escolha perfeitamente racional.
+
+    Soluções satisfatórias em vez de otimizadas
+    substituição de objetivos abstratos abrangentes por objetivos menores tangíveis
+    Divisão de responsabilidades no processo decisório, dentro da estrutura organizacional.
+
+    Ainda assim a decisão pode ser lenta
+
+    requer o levantamento de todas as informações sobre o assunto, o estudo de muitas possibilidades técnicas e políticas para sulocionar o problema.
+
+    pretendem-se realizar grandes mudanças apartir dos objetivos e cursos de ação previamente definidos.
+
+    Os critérios do indivíduo são multiplos e possivelmente ambíguos
+    Os critérios de decisão dependem do contexto
+    As decições as vezes podem ser afetadas por fatores inconciêntes.
+
+
+
+
+
+
+ferramentas
+
+
+
+
+Diagrama de Ishikawa - Espinha de Peixe - Diagrama de causa e Efeito
+    Basicamente procura encontrar os fatores que causam o efeito que se quer mudar.

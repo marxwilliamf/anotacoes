@@ -1,0 +1,26 @@
+
+
+Lineares ou sequenciais - posições fixas e sequenciais em memória, necessário informar previamente o tamanho do array e a quantidade de bytes para o array.
+    Vetores
+    Arrais
+    Arranjos
+
+Encadeadas - Alocadas dinâmicamente
+    Lista Encadeada
+
+
+Nó Cabeça
+Header
+Cabeça
+Sentinela
+
+
+
+filas|Queues: Insere numa ponta remove da outra, FIFO(First in First Out), LILO(Last In Last Out)
+
+Deques (Double ended queues) tipo de filas especiais que se pode inserir e remover nas duas pontas
+
+TAD - Dados e operações específicas de filas
+
+Enqueue: Insere - Back - Direita ou Esquerda
+Dequeue: Retira - Front - Esquerda ou Direita

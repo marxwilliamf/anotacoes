@@ -41,9 +41,9 @@ Policy - Policies - Política Pública
 
 
                        _______  
-            Apoios    ¦       ¦ Decisões Políticas 
+           Apoios  -- ¦       ¦ -- Decisões Políticas 
                       ¦  SP   ¦
-            Demendas  ¦_______¦ Políticas Públicas
+          Demendas -- ¦_______¦ -- Políticas Públicas
                 ^                         ¦               
                 ¦_________________________¦
 
@@ -135,3 +135,88 @@ Política
         tem um papel essencial na articulação entre problemas e soluções), problemas de força política e entre estas, e as propostas existentes
         eles amaram os três fluxos para fazer uma política pública
         
+
+
+
+Decisões
+
+São escolhas entre alternativas ou oportunidades que visam melhorar a situação atualm resolvendo um problema ou aproveitando uma oportunidade.
+Estas decisões podem levar a novas situações e novas decisões. Se enxerga a situação atual pior do que seriauma situação ideal.
+
+Um problema é definido em relação a percepção de algum ator. Pois uma determinada situação que é problema pra alguém pode ser ótima para outra pessoa ou outro grupo.
+
+Como as pessoas se sentem em relação a uma situação posta de fato, não se tem como qualifica alguma situação puramente objetiva como problema. 
+É necessário uma percepção de uma pessoa ou grupo para identificar algo como uma situação que pode ser melhorada.
+
+Podem ser programadas ou não programadas:
+
+PROGRAMADAS:
+    Repetitivas, já estão no manual.
+
+NÃO PROGRAMADAS
+    Não repetitivo, não familiar, desenhar uma nova solução.
+
+
+Processo Decisório (Racional)
+    Identificação do problema ou da oportunidade
+    Diagnóstico
+    Concepção de alternativas
+    Decisão
+    Avaliação
+
+Existem nuances em ralação a racionalidade, ela pode ser perfeita ou absoluta em um mundo teórico ipotético, 
+e em um mundo real essa racionalidade vai ser considerada imperfeita.
+
+
+Racional absoluta
+
+    Os tomadores de decisão deveriam ter um extremo grau de controle sobre a situação que enfrentam
+    (não que as coisas acontecem como ele quer, mas que ele conhece as coisas as quais enfrenta)
+
+    Processo:
+        Concientiza-se do problema
+        Define uma meta
+        Analisa cuidadosamente os meios alternativos
+        escolhe entre os meios aquele que melhor se alinha com o resultado pretendido
+
+        Resposta ÓTIMA - aquela que maximiza os resultados
+
+    Consepção perfeita do problema
+    Consepção perfeita dos nossos valores e do que se quer alcançar
+    Ter informações perfeitas completas, precisas intempestivas sobre tudo que está acontecendo e cerca aquele problema
+    Ter uma perfeita capacidade de processamento dessas informações
+    TUDO ISSO ao olhar entre todas as alternativas poderia-se escolher aquela que maximiza o nosso resultado, a melhor resposta a resposta ÓTIMA.  
+
+Racionalidade Limitada
+
+    A perfeita racionalidade está além das reais capacidades dos atores decisórios. Nã maioria dos casos, não existe clareza se que sobre os valores 
+    que orientam a decisão.
+    Nem sempre é possivel distinguir perfeitamente as alternativas, os valores e os fatos os meios e os fins.
+    A tomada de decisões pode ser afetada pelas nossas emoções.
+    Não tem acesso a todas as informações
+    As informações sobre os impactos das alternativas são imperfeitas e falhas.
+    Não existem recursos técnicos nem tempo para uma escolha perfeitamente racional.
+    Limitações cognitivas para processar
+
+    Os critérios do infivíduo são multiplos e possivelmente ambíguos 
+    Os critérios de decisão dependem do contexto.
+    As decisões são tomadas por fatores inconciêntes
+    A racionalidade é limitada.
+
+    Decisões pode ser tomadas até em função do estado fisiológico do tomador de decisões.
+
+    Solução satisfatória ao invés de otimizada
+    substituição de objetivos maiores globais por sbjetivos menores tangíveis.
+    Divisão de tarefas do processo decisório entre muitos expecialistas, coordenando seu trabalho através de 
+    uma estrutura de comunicação e relações de autoridade.
+    Ainda assim:
+    Decisão pode ser lenta
+    Requer o levantamento de todas as informaçõe que se pode ter sobre o assunto.
+    Pretende realizar grandes mudanças apartir de objetivos e cursos de ação previamente definidos.
+
+
+
+
+
+
+

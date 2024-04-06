@@ -1,0 +1,5 @@
+SID(Seguranã, Integridade, Disponibilidade)
+
+CIA = Inglês (Confiability, Integrity, Availability)
+
+CIDA (Confidênciabilidade, Integridade, Disponibilidade, Autenticidade)
