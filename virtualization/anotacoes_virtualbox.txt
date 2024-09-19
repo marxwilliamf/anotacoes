@@ -5,3 +5,6 @@ vboxmanage list vms
 vboxmanage modifyvm "Xen" --nested-hw-virt on
 
 egrep --color -i "svm|vmx" /proc/cpuinfo
+
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All

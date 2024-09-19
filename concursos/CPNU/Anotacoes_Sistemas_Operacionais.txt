@@ -1,0 +1,168 @@
+
+
+
+
+
+
+
+
+
+
+Escalonador (Scheduler): Objetivo maximizar a utiilização do processador, e o Throughput. E diminuir os tempos de Turnaround, espera e resposta.
+
+Dispatcher: faz a troca de contexto dos processos
+    Latencia do Dispatcher: periodo de tempo gasto na troca de processo por outro. 
+
+
+
+Tempo Compartilhado (Time Sharing): Todos os processos são tratados de forma iguál com o mesmo tempo Time Slicensed
+
+Tempo Real (Real Time): processos críticos são priorizados em detrimento dos outros.
+
+
+
+
+Throughput = numero de processos executados em um determinado intervalo de tempo. Ex.: dados transferidos na rede Mbps.
+
+Turnaround = Todo o tempo de vida do início ao fim do processo. Contando tempo de Alocação de memória, fila de pronto, espera e tempo de CPU.
+
+Tempo de CPU: tempo que o processo leva em estado de execução
+
+Tempo de Espera: tempo que um processo dispende em uma fila de pronto
+
+Tempo de Resposta: Tempo decorido entre uma requisição do sistema e o instante da resposta. (mais limitada pelos dispositivos de E/S do que do de processamento).
+    É o tempo que uma interface gráfica que pode conter vários processos e thread em paralelo demora para aparecer na tela para uso do usuário, em background ela ainda pode estar 
+    processando atualizações, otimizações etc. Se fosse um programa de um só processo com apenas uma thread que seu reposta fosse um resultado de ordenação por exemplo o tempo de resposnta
+    e o turnaround poderia ser o mesmo.
+
+Política Preemptiva: Diz que o processo pode sair do estado de execução e ir para o estado de prontro para aguardar na fila novamente.
+
+
+
+Escalonamento não prenptivo: O código vai pra execução e só sai de lá se terminar ou o próprio código entrar em modo de espera.
+    FIFO - Fila de processos FIFO -> Processo que entra fica até terminar ou se o próprio código mandá-lo para o estado de espera.
+    FIFO = FCFS (First Come First Served)  
+    SJF (Shortest-Job-First) -> Seleciona os processos com menor tempo de execução Primeiro
+
+
+
+
+Escalonamento Preemptivo: O código fica uma porção de tempo em execução "Time Slice" e ou volta pra pronto ou vai para espera até que termine.
+    SRT (Shortest Remaining Time): Sempre que entra um processo que a estimativa de tempo de termino é menor que a que falta para terminar o em execução ele troca o processo por este, 
+    ordenando os processo da fila de pronto por menor tempo de execução.
+    Round Robin - Escalonamneto Circular: Preempção por tempo, Time Slice ou Quantum: se as fatias de tempo do sistema forem muito pequenas, as excessivas mudanças de contexto do processo podem aumentar o turnaround.
+
+
+Starvation: Imposibilidade de um processo ser selecionado para execução, por ele estar sempre preterido. Processo em Inanição ou Morrer de fome.
+
+
+
+Escalonamnento Cooperativo
+
+
+
+
+
+
+CPU Bound = Processos com uso massivo de CPU
+
+I/O Bound = Processos com uso massivo de Entrada e Saída
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Multy-Tenancy (Multi Inquilino) = Diversos usuarios acessando os mesmos tipos de recursos que são completamente isolados uns dos outros
+
+
+
+
+
+DAU (Daily activity Users): quantidade de usuários que interagem no sitema durante o dia
+
+
+
+
+
+
+
+
+
+
+
+
+
+

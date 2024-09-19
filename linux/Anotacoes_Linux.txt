@@ -1,3 +1,26 @@
+1. Instale o GRUB na partição EFI do Linux:
+
+    Identifique o dispositivo da partição EFI do Linux: Por exemplo, /dev/sdb1.
+    Monte a partição EFI do Linux: Por exemplo, mount /dev/sdb1 /mnt/efi.
+    Acesse o diretório de instalação do GRUB: Por exemplo, cd /mnt/efi/grub.
+    Instale o GRUB: Execute o comando grub-install --target=device --efi-directory=/mnt/efi --bootmap=/mnt/efi/bootmap.efi /dev/sdb.
+        Substitua /dev/sdb pelo dispositivo da sua partição EFI do Linux.
+    Gere o arquivo de configuração do GRUB: Execute o comando grub-mkconfig -o /mnt/efi/grub/grub.cfg.
+
+2. Configure o arquivo de configuração do GRUB:
+
+    Edite o arquivo /mnt/efi/grub/grub.cfg: Você pode usar um editor de texto como o nano ou vi.
+    Adicione entradas para o Windows e Linux: Certifique-se de que o arquivo de configuração do GRUB contenha entradas para inicializar o Windows e o Linux a partir das respectivas partições EFI.
+        Consulte a documentação do GRUB para obter informações sobre como formatar as entradas de configuração corretamente.
+
+3. Desmonte a partição EFI do Linux:
+
+    Execute o comando umount /mnt/efi.
+
+4. Reinicie o computador:
+
+
+
 
 find . -regex ".*Objeto.*\|.*OO.*\|.*POO.*"
 find . -name "*OO*"

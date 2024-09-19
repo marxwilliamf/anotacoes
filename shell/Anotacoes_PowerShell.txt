@@ -27,3 +27,17 @@ Windows 11 - Virtualbox Bidirecional
                 Componentes do Windows
                     Serviços da Área de Trabalho Remota
                         Redirecionamento de Dispositivo e Recurso
+
+
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+
+
+
+
+como administrador
+wsl --install
+
+
+
+Get-FileHash file.iso

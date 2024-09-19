@@ -29,3 +29,28 @@ Encapsulamento
 Associação
 Herança
 Polimorfismo
+
+Pilares da POO
+    Abstração
+    Encapsulamento
+    Herança
+    Polimorfismo
+
+Abstração
+    Classes
+    Objetos
+        Propriedade 
+            Dados
+            Estados
+            Atributos
+        Comportamento
+    Atributos
+    Métodos
+
+
+Encapsulamento: Protegem os dados de um dado objeto de forma de que não possam ser acessados de fora dos métodos, parâmetros ou controles implementados.
+
+Polimorfismo: Métodos com mesma assinatura mas que podem ter comportamentos diferentes quando acessados: Ex: Métodos de uma subclasse de uma mesma hierarquia que possuem implementações diferentes
+            E uma Característica na qual os mesmos atributos ou métodos podem ser acessados de formas distintas.
+
+

@@ -1,0 +1,4 @@
+
+
+
+Clicar com Ctrl em uma layer que foi selecionada e recortada com fundo transparente seleciona novamente essa seleção.

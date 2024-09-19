@@ -1,0 +1,193 @@
+
+
+
+
+
+
+
+
+
+Computação em Núvemos - NIST (National Intitute of Standards Tecnology)
+    Serviço sob demanda e autoatendimento
+        o Cliente que configura a capacidade, planejamento.
+            Requerer ou dispensar: 
+                capacidade de computação
+                Tempo de servidor
+                capacidade de armazenamnento
+            Sem necessidade de interação humana com o fornecedor
+    Acesso amplo a Rede
+        Acesso por uma heterogeneidade de dispositivos
+        promovem o uso de plataformas-clientes heterogêneas 
+            Telefones móveis, 
+            laptops
+            tablets, 
+            PDAs etc.
+
+    Pool de Recursos
+        não sabe qual ou aonde esta o recurso que utiliza, serviço transparente
+        recursos do pool de recursos disponibilizados multi-tenant 
+
+    Rápida Elasticidade
+        Disponibilidade para aumentar ou libertar os recursos em alguns casos de forma automática
+
+    Serviço Medido
+        Controle e Otimização de Recursos
+        Recurso monitorado e controlado de forma transparente.
+
+
+
+
+
+Escalabilidade é normalmente planejadade
+Elsticidade é normalmente automática
+
+
+
+
+
+
+NIST -------------------------------------------------------------------------------------------------------------------------------------
+SAS - Software as a Service
+    As aplicações Rodam na Nuvem
+    através de diferentes dispositivos dos clientes
+    o cliente não gerencia aou controla a infraestrutura de nuvem subjacente
+        Ex: Office 365 Online
+
+
+PAS - Platform as a Service
+    Capacidade de implantar aplicações na infraestrutura de Nuvem 
+    Desenvolvimento
+    Implantação
+    Ex.:
+        Linguagens de Programação
+        bibliotecas
+        Serviços
+        Database Managemant
+        development Tools
+        Sistemas Operacionais **
+        ---> midleware <---------------------------------------
+
+IAS - Infra as a Service
+    Capacidade de provisionar, processamento, armazenamneto, redes e outros recursos computacionais
+    implantar e executar softwares arbitrários como Sistemas Operacionais **
+    possivelmente controle LIMITADO de alguns componentes de rede como por exemplo firewalls de host
+    Ex.:
+        Servidores e Armazenamneto
+        Data Centers
+        Network and Security
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Container as a Servise      
+    Gerenciar e Implantar Containeres, aplicações e grupos de containeres.
+
+
+Desktop como Serviço (DaaS):
+    Este modelo fornece desktops virtuais aos usuários, permitindo-lhes acessar suas estações de trabalho de qualquer lugar.
+
+Banco de Dados como Serviço (DBaaS):
+    Oferece gerenciamento de banco de dados na nuvem, eliminando a necessidade de instalar e manter o banco de dados físico.
+
+Função como Serviço (FaaS): Serverless 
+    Também conhecido como computação sem servidor, este modelo permite aos desenvolvedores escrever e implantar 
+    código na nuvem sem se preocupar com a infraestrutura subjacente.
+
+Backup como Serviço (BaaS):
+    Fornece uma solução para backup e recuperação de dados armazenados na nuvem ou em dispositivos locais.
+
+Disaster Recovery como Serviço (DRaaS):
+    Oferece soluções de recuperação de desastres na nuvem, garantindo continuidade dos negócios em caso de falhas de 
+    sistema ou desastres naturais.
+
+Segurança como Serviço (SECaaS):
+    Fornece segurança gerenciada na nuvem, incluindo antivírus, detecção de intrusão e prevenção de perda de dados.
+
+Comunicação como Serviço (CaaS):
+    Oferece soluções de comunicação baseadas na nuvem, como VoIP, videoconferência e mensagens instantâneas.
+
+Dados como Serviço (DaaS):
+    Dados são acessados e utilizados através de serviços baseados na nuvem, em vez de estarem restritos a um sistema específico ou localização física.
+    Ex.:
+        Seus dados de Big Data
+
+Backend as a Service
+    Fornese-se o backend como serviço e o cliente so se conecta com o frontend
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

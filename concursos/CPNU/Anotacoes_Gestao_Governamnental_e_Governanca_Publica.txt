@@ -1,5 +1,20 @@
 
 
+Temas de redação:
+
+Explique como a Análise Swot pode ajudar sua gerência no desenvolviemento e manutenção da empresa.
+
+Explique como a análise Swot pode ajudar a mitigar suas fraquezas internas perante as variáveis externas.
+
+
+
+
+
+
+
+
+
+
 
 
 Processo Decisório
@@ -78,3 +93,331 @@ ferramentas
 
 Diagrama de Ishikawa - Espinha de Peixe - Diagrama de causa e Efeito
     Basicamente procura encontrar os fatores que causam o efeito que se quer mudar.
+
+
+
+Planos Estratégicos - Longo Prazo - Muitos Anos
+Táticos - Medio Prazo - 2 Anos
+Operacionais - Curto Prazo - Mês que vem
+
+
+Identidade Estatégica
+    Visão de Futuro: onde eu quero estar no futuro, o que eu quero ser, como quero ser visto pela sociedade
+    Missão: razão de ser, para que é que a minha organização existe, não exatamente o que ela faz mas qual é a contribuição dela pro mundo
+    Negócio: ramo de atuação ex.: transpostes, administração pública
+    Valores: valores que orientam a organização ex.: transparÊncia, democracia etc.
+
+
+Objetivos Estratégicos
+        Alvos concretos que podem ser precisos, ou representar interações
+
+Estratégias
+    cursos de ação a serem seguidps
+
+
+
+
+
+
+
+Fluxograma Planejamneto Estratégicos
+    1. Visão e Missão
+    2. Análise da Situação estratégica
+    3. Definição de Objetivos e Estratégias
+        3.1. Análise do Ambiente Externo
+        3.2. Análise de Pontos Fortes e Fracos
+    4. Estratégias Funcionais e Operacionais
+    5. Execução e Avaliação
+
+
+
+Análise Swot
+
+    Análise Interna - Variáveis Controláveis - Macro e Micro Ambienete
+        Forças 
+        Fraquezas
+    Análise Externa - variáveis incontroláveis - An=mbiente Externo
+        Oportunidades
+        Ameaças
+------------------------------------------------
+   Swot   |    Ameaças    |   Oportunidades   |
+------------------------------------------------  
+Forças    |  Manutenção   |  Desenvolvimento  |
+------------------------------------------------
+Fraquesas | Sobrevivência |    Crescimento    | 
+------------------------------------------------   
+
+A modelo SWOT que é muito utilizada na área de administração, pode ser usada para análise interna e exerna.
+Quando o foco é a análise externa ele pode vislumbrar além da interna também quatro âmbitos, que são, ameaças, oportunidades, forças e fraquezas.
+
+O âmbito de ameaças e oportunidades é muito rico, no sentido que a própria ameaça, pode ser, dentre as melhores oportunidades, a principal medida a ser tomada.
+E quandohá em vista o ambiente externo, salienta-se que não há total controle das variáveis podem influenciar a organização.
+
+Além do mais uma organização tem suas forças e fraquezas, que quando quer fortalecer sua base deve investir para reduzir suas fraquezas. 
+E no caso de fortalecer-se no mercado competitivo deve incrementar seus pontos fortes.
+
+Considerando-se o que foi dito, uma organização que quer ser forte no mercado deve focar em reduzir suas ameaças e fraquezas e fortalecer seus pontos fortes em busca de novas oportunidades. 
+
+
+
+
+Ambiente Externo
+
+    MACRO AMBIENTE: 
+        AMBIENTE GERAL
+        Aspecto Político / Governamental
+        Aspecto Legal
+        Aspecto Social
+        Aspecto Econômico
+        Aspecto Tecnológico
+        Aspecto Ambiental
+
+    MICRO AMBIENTE:
+        AMBIENTE SETORIAL ou OPERACIONAL
+        Concorrência Atual
+        Concorrência Potencial
+        Relações com Fornecedores
+        Relações com Consumidores
+        Produtos Substitutos
+
+Ambiente Interno
+    Fatores que geram vantagens competitivas vs fatores que reduzem vantagens competitivas
+
+
+
+
+
+Gestão do Planejamneto estratégico
+    Panejar - Planejamento Estratégicos
+        Análise do Ambiente
+        Diretrizes Organizacionais
+        Formulação da Estratégia
+    Implementar
+        Implementação da Estratégia
+    Controlar
+        Controle Estratégico
+
+Ciclo contínuo
+    Planejar 
+    Implementar 
+    Controlar
+
+
+Desenvolver e manter a organização em um ambiente em constante mutação
+
+
+
+
+
+
+Abordagem do Planezamento
+    Convencional
+        Segregação entre planejamento e execução
+        Primeiro planeja depois executa = dicotomia lógica
+        + Endógena = visão interna/
+        Baseado em planos ações e tarefas previamente definidas
+        Concentra-se nos clientes ou instituidores
+        Avalia o que foi realizado e o que foi previsto.
+        Planejamento ocasional, periódico ou em crise.
+    Moderna
+        Integração entre planejamento e Implementação
+        Formulação, ação, monitoramento e avaliação devem ocorrer concomitantemente, são momentos lógicos mas não cronológicos
+        + Exógena = Visão externa - Não tenta impor somente a visão interna no mercado mas sim se adpta a realidade do mercado 
+        Baseado em princípios estratégicos adaptáveis
+        Concentra-se nos Stackholders em uma forma mais ampla, nos concorentes e fornecedores, comunidade em que se está inserida a empresa, questões mais amplas da sociedade.
+        Avalia resultado da eficácia e eficiência e a efetividade dos processos organizacionais, não só com o que foi planejado mas o que poderia ter sido planejado.
+        Processo COntínuo e constante de planejamento.
+
+
+
+
+Stackholders
+    Clientes
+    Acionistas
+    Proprietário
+    
+
+
+BSC - Balanced Scorecard
+
+PERSPECTIVAS:
+    Financeira
+    Clientes (Mercadológica)
+    Processos Internos
+    Aprendizado e Crescimento
+
+
+Financeira
+    Objetivos
+        resultado
+        esforço
+Clientes (Mercadológica)
+
+Processos Internos
+
+Aprendizado e Crescimento
+
+
+
+Conjunto de:
+    Objetivos
+    Indicadores
+        Lag - (Resultados Alcançados) - resultados já realizados, desempenhos final de atividades e processos
+        Lead - (tendências) - monitoramento das atividades e dos processos, acompanhando as tendências de desempenho
+    metas
+    Iniciatívas
+
+
+
+1º Definir as PERSPECTIVAS
+2º Identificar os Objetos dentro de cada PERSPECTIVAS
+
+
+
+
+
+
+Abordagem para construção de Cenários - Métodos {Godet, Porter, Grumbach}
+    Projetiva - Ignora as incertezas
+    Prospectiva - Reconhece a Incerteza
+
+    Cenários
+        Probabilísticos
+        Plausíveis
+        Internamente consistentes
+        Relevantes
+        Foco
+        Transparentes
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
